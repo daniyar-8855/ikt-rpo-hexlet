@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="290" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Информационный портал и интерактивный: в чём разница</text>
+
+  <!-- Информационный -->
+  <rect x="30" y="55" width="330" height="205" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#0d2b45">ИНФОРМАЦИОННЫЙ</text>
+
+  <rect x="60" y="100" width="270" height="36" rx="6" fill="#2196F3"/>
+  <text x="195" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Только читаешь</text>
+
+  <text x="195" y="162" text-anchor="middle" font-size="12" fill="#0d2b45">новости, статьи, справки</text>
+  <text x="195" y="185" text-anchor="middle" font-size="12" fill="#0d2b45">вход не обязателен</text>
+  <text x="195" y="208" text-anchor="middle" font-size="12" fill="#0d2b45">данные не оставляешь</text>
+  <text x="195" y="238" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">пример: Әділет, data.egov.kz</text>
+
+  <!-- Интерактивный -->
+  <rect x="400" y="55" width="330" height="205" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">ИНТЕРАКТИВНЫЙ</text>
+
+  <rect x="430" y="100" width="270" height="36" rx="6" fill="#4CAF50"/>
+  <text x="565" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Выполняешь действия</text>
+
+  <text x="565" y="162" text-anchor="middle" font-size="12" fill="#1b5e20">вход и идентификация (ЭЦП)</text>
+  <text x="565" y="185" text-anchor="middle" font-size="12" fill="#1b5e20">личный кабинет, заявления</text>
+  <text x="565" y="208" text-anchor="middle" font-size="12" fill="#1b5e20">юридически значимо</text>
+  <text x="565" y="238" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">пример: eGov.kz, salyk.kz, банки</text>
+</svg>

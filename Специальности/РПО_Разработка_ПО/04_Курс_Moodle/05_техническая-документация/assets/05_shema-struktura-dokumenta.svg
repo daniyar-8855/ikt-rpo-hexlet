@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Структура документа: заголовки → стили → оглавление</text>
+
+  <!-- Заголовки -->
+  <rect x="40" y="60" width="200" height="180" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="140" y="86" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">1. Заголовки</text>
+  <text x="140" y="118" text-anchor="middle" font-size="12" fill="#0d2b45"># Заголовок 1</text>
+  <text x="140" y="142" text-anchor="middle" font-size="12" fill="#0d2b45">## Заголовок 2</text>
+  <text x="140" y="166" text-anchor="middle" font-size="12" fill="#0d2b45">### Заголовок 3</text>
+  <text x="140" y="200" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">каркас документа</text>
+  <text x="140" y="218" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">по иерархии</text>
+
+  <!-- Стили -->
+  <rect x="280" y="60" width="200" height="180" rx="8" fill="#2196F3"/>
+  <text x="380" y="86" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2. Стили</text>
+  <text x="380" y="120" text-anchor="middle" font-size="12" fill="#ffffff">«Заголовок 1/2/3»</text>
+  <text x="380" y="148" text-anchor="middle" font-size="12" fill="#ffffff">размечают смысл,</text>
+  <text x="380" y="170" text-anchor="middle" font-size="12" fill="#ffffff">а не «жирный вид»</text>
+  <text x="380" y="204" text-anchor="middle" font-size="11" fill="#e3f2fd" font-style="italic">программа понимает,</text>
+  <text x="380" y="222" text-anchor="middle" font-size="11" fill="#e3f2fd" font-style="italic">где какой уровень</text>
+
+  <!-- Оглавление -->
+  <rect x="520" y="60" width="200" height="180" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="620" y="86" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">3. Оглавление</text>
+  <text x="620" y="120" text-anchor="middle" font-size="12" fill="#1b5e20">собирается само</text>
+  <text x="620" y="148" text-anchor="middle" font-size="12" fill="#1b5e20">из стилей заголовков</text>
+  <text x="620" y="182" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">навигация по документу</text>
+  <text x="620" y="202" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">+ быстрая правка</text>
+  <text x="620" y="222" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">структуры</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M240 150 L280 150"/>
+    <path d="M480 150 L520 150"/>
+  </g>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+  </defs>
+
+  <text x="380" y="278" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">размечаешь заголовки стилями — оглавление и навигация строятся автоматически</text>
+</svg>

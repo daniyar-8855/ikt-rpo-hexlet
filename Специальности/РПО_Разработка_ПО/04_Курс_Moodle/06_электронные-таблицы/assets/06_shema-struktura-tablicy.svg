@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="340" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Как устроена таблица: ячейка, строка, столбец, адрес</text>
+
+  <!-- Заголовки столбцов -->
+  <rect x="120" y="55" width="120" height="34" fill="#2196F3"/>
+  <text x="180" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">A</text>
+  <rect x="240" y="55" width="120" height="34" fill="#2196F3"/>
+  <text x="300" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">B</text>
+  <rect x="360" y="55" width="120" height="34" fill="#2196F3"/>
+  <text x="420" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">C</text>
+  <rect x="480" y="55" width="120" height="34" fill="#2196F3"/>
+  <text x="540" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">D</text>
+
+  <!-- Номера строк -->
+  <rect x="60" y="89" width="60" height="40" fill="#2196F3"/>
+  <text x="90" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">1</text>
+  <rect x="60" y="129" width="60" height="40" fill="#2196F3"/>
+  <text x="90" y="154" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2</text>
+  <rect x="60" y="169" width="60" height="40" fill="#2196F3"/>
+  <text x="90" y="194" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">3</text>
+
+  <!-- Сетка ячеек -->
+  <g>
+    <rect x="120" y="89" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="240" y="89" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="360" y="89" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="480" y="89" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+
+    <rect x="120" y="129" width="120" height="40" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+    <rect x="240" y="129" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="360" y="129" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="480" y="129" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+
+    <rect x="120" y="169" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="240" y="169" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="360" y="169" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+    <rect x="480" y="169" width="120" height="40" fill="#e8f4fd" stroke="#2196F3" stroke-width="1"/>
+  </g>
+
+  <!-- Адрес выделенной ячейки -->
+  <text x="180" y="154" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">A2</text>
+
+  <!-- Подписи -->
+  <text x="540" y="113" text-anchor="middle" font-size="12" fill="#0d2b45">ячейка</text>
+
+  <!-- Пояснение: строка -->
+  <text x="660" y="154" text-anchor="start" font-size="12" fill="#37474f">строка 2</text>
+  <line x1="600" y1="149" x2="650" y2="149" stroke="#90caf9" stroke-width="2"/>
+
+  <!-- Пояснение: столбец -->
+  <text x="180" y="245" text-anchor="middle" font-size="12" fill="#37474f">столбец A</text>
+  <line x1="180" y1="215" x2="180" y2="232" stroke="#90caf9" stroke-width="2"/>
+
+  <!-- Легенда адреса -->
+  <text x="380" y="290" text-anchor="middle" font-size="14" fill="#0d2b45">Адрес ячейки = буква столбца + номер строки.</text>
+  <text x="380" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">Например: A2 — столбец A, строка 2.</text>
+</svg>

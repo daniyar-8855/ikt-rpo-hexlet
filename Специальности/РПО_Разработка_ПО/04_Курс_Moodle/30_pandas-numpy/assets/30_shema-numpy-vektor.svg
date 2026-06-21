@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">NumPy: операция применяется ко всем элементам сразу</text>
+
+  <!-- Исходный массив -->
+  <text x="380" y="62" text-anchor="middle" font-size="13" fill="#37474f">ceny = np.array([1500, 2000, 1800])</text>
+
+  <rect x="200" y="80" width="110" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="255" y="108" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">1500</text>
+  <rect x="325" y="80" width="110" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="108" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">2000</text>
+  <rect x="450" y="80" width="110" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="505" y="108" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">1800</text>
+
+  <!-- Операция -->
+  <rect x="260" y="140" width="240" height="38" rx="8" fill="#2196F3"/>
+  <text x="380" y="164" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">ceny * 2  (без цикла!)</text>
+
+  <!-- Стрелки вниз -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M255 124 L300 140"/>
+    <path d="M380 124 L380 140"/>
+    <path d="M505 124 L460 140"/>
+  </g>
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M300 178 L255 200"/>
+    <path d="M380 178 L380 200"/>
+    <path d="M460 178 L505 200"/>
+  </g>
+
+  <!-- Результат -->
+  <rect x="200" y="205" width="110" height="44" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="255" y="233" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">3000</text>
+  <rect x="325" y="205" width="110" height="44" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="233" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">4000</text>
+  <rect x="450" y="205" width="110" height="44" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="505" y="233" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">3600</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+  </defs>
+
+  <text x="380" y="280" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">одна команда меняет весь массив — это быстрее ручного цикла</text>
+</svg>

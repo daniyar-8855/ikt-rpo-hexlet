@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="340" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">DataFrame — это таблица в коде</text>
+
+  <!-- Шапка таблицы -->
+  <rect x="170" y="60" width="200" height="40" rx="8" fill="#2196F3"/>
+  <text x="270" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">tovar</text>
+  <rect x="380" y="60" width="200" height="40" rx="8" fill="#2196F3"/>
+  <text x="480" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">cena</text>
+
+  <!-- Строки -->
+  <rect x="170" y="105" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="270" y="129" text-anchor="middle" font-size="13" fill="#0d2b45">Мышь</text>
+  <rect x="380" y="105" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="480" y="129" text-anchor="middle" font-size="13" fill="#0d2b45">1500</text>
+
+  <rect x="170" y="148" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="270" y="172" text-anchor="middle" font-size="13" fill="#0d2b45">Клав.</text>
+  <rect x="380" y="148" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="480" y="172" text-anchor="middle" font-size="13" fill="#0d2b45">2000</text>
+
+  <rect x="170" y="191" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="270" y="215" text-anchor="middle" font-size="13" fill="#0d2b45">Монитор</text>
+  <rect x="380" y="191" width="200" height="38" rx="6" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="480" y="215" text-anchor="middle" font-size="13" fill="#0d2b45">9000</text>
+
+  <!-- Подписи: столбец -->
+  <text x="480" y="50" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">столбец (column)</text>
+
+  <!-- Подпись: строка -->
+  <text x="120" y="172" text-anchor="end" font-size="12" fill="#37474f" font-style="italic">строка (row)</text>
+  <line x1="130" y1="168" x2="168" y2="168" stroke="#90caf9" stroke-width="2"/>
+
+  <!-- Доступ по столбцу -->
+  <rect x="160" y="255" width="440" height="46" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="275" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">df["cena"]  →  весь столбец как список чисел</text>
+  <text x="380" y="293" text-anchor="middle" font-size="12" fill="#1b5e20">df["cena"].mean()  →  среднее одной командой</text>
+
+  <!-- Стрелка от шапки cena к блоку доступа -->
+  <path d="M480 100 L480 255" stroke="#4CAF50" stroke-width="2.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arrg)"/>
+
+  <defs>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+
+  <text x="380" y="325" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">DataFrame = столбцы + строки; обращаешься по имени столбца</text>
+</svg>

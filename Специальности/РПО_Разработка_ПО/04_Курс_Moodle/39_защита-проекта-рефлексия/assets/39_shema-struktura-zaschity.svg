@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="250" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Структура устной защиты проекта</text>
+
+  <!-- 1. Задача -->
+  <rect x="20" y="70" width="130" height="56" rx="8" fill="#2196F3"/>
+  <text x="85" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. Задача</text>
+  <text x="85" y="112" text-anchor="middle" font-size="10" fill="#ffffff">что решал</text>
+
+  <!-- 2. Решение -->
+  <rect x="172" y="70" width="130" height="56" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="237" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">2. Решение</text>
+  <text x="237" y="112" text-anchor="middle" font-size="10" fill="#37474f">как делал</text>
+
+  <!-- 3. Инструменты ИИ -->
+  <rect x="324" y="70" width="130" height="56" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="389" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">3. Инструменты</text>
+  <text x="389" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">ИИ</text>
+  <text x="389" y="121" text-anchor="middle" font-size="9" fill="#37474f">честно: где помогал</text>
+
+  <!-- 4. Результат -->
+  <rect x="476" y="70" width="130" height="56" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="541" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">4. Результат</text>
+  <text x="541" y="112" text-anchor="middle" font-size="10" fill="#37474f">что получилось</text>
+
+  <!-- 5. Выводы -->
+  <rect x="628" y="70" width="112" height="56" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="684" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">5. Выводы</text>
+  <text x="684" y="112" text-anchor="middle" font-size="10" fill="#2e7d32">чему научился</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr39)">
+    <path d="M150 98 L170 98"/>
+    <path d="M302 98 L322 98"/>
+    <path d="M454 98 L474 98"/>
+    <path d="M606 98 L626 98"/>
+  </g>
+
+  <defs>
+    <marker id="arr39" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+  </defs>
+
+  <text x="380" y="170" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Говори по порядку, коротко и по делу — 5-7 минут на всё выступление</text>
+  <text x="380" y="200" text-anchor="middle" font-size="12" fill="#1b5e20" font-weight="bold">Потом — ответы на вопросы и рефлексия</text>
+  <text x="380" y="225" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">Честно покажи, где помогал ИИ, а что сделал и проверил сам</text>
+</svg>

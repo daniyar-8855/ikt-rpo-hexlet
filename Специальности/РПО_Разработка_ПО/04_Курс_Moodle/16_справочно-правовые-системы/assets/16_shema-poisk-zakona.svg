@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Как найти нужный закон в Әділет</text>
+
+  <!-- Шаг 1: запрос -->
+  <rect x="30" y="70" width="200" height="64" rx="8" fill="#2196F3"/>
+  <text x="130" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">1. Запрос</text>
+  <text x="130" y="116" text-anchor="middle" font-size="11" fill="#ffffff">по названию / реквизитам</text>
+  <text x="130" y="130" text-anchor="middle" font-size="11" fill="#ffffff">или ключевым словам</text>
+
+  <!-- Шаг 2: список результатов -->
+  <rect x="280" y="70" width="200" height="64" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">2. Список актов</text>
+  <text x="380" y="116" text-anchor="middle" font-size="11" fill="#37474f">выбрать нужный</text>
+  <text x="380" y="130" text-anchor="middle" font-size="11" fill="#37474f">документ</text>
+
+  <!-- Шаг 3: карточка -->
+  <rect x="530" y="70" width="200" height="64" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="630" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">3. Карточка</text>
+  <text x="630" y="111" text-anchor="middle" font-size="11" fill="#37474f">статус «действующий»,</text>
+  <text x="630" y="125" text-anchor="middle" font-size="11" fill="#37474f">дата редакции</text>
+
+  <!-- Шаг 4: текст НПА -->
+  <rect x="280" y="200" width="200" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="226" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">4. Текст НПА</text>
+  <text x="380" y="246" text-anchor="middle" font-size="11" fill="#1b5e20">нужная статья / пункт</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M230 102 L280 102"/>
+    <path d="M480 102 L530 102"/>
+    <path d="M630 134 L630 175 L482 175"/>
+  </g>
+  <path d="M455 175 L405 200" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#arrg)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+
+  <text x="380" y="288" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">от запроса — к актуальному первоисточнику, а не к пересказу</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Алгоритм отладки с ИИ</text>
+
+  <!-- 1. Ошибка -->
+  <rect x="20" y="70" width="135" height="50" rx="8" fill="#2196F3"/>
+  <text x="87" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. Ошибка</text>
+  <text x="87" y="109" text-anchor="middle" font-size="10" fill="#e3f2fd">программа упала</text>
+
+  <!-- 2. Читаем traceback -->
+  <rect x="185" y="70" width="135" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="252" y="92" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">2. Читаем</text>
+  <text x="252" y="109" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">traceback</text>
+
+  <!-- 3. Гипотеза с ИИ -->
+  <rect x="350" y="70" width="135" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="417" y="92" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">3. Гипотеза</text>
+  <text x="417" y="109" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">с ИИ</text>
+
+  <!-- 4. Проверка -->
+  <rect x="515" y="70" width="135" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="582" y="92" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d2b45">4. Проверка</text>
+  <text x="582" y="109" text-anchor="middle" font-size="10" fill="#37474f">это причина?</text>
+
+  <!-- 5. Тест -->
+  <rect x="312" y="195" width="135" height="50" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="217" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">5. Тест</text>
+  <text x="380" y="234" text-anchor="middle" font-size="10" fill="#2e7d32">исправил → проверил</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M155 95 L185 95"/>
+    <path d="M320 95 L350 95"/>
+    <path d="M485 95 L515 95"/>
+    <path d="M582 120 L420 190"/>
+  </g>
+  <!-- Возврат: гипотеза неверна -->
+  <path d="M312 220 Q200 220 200 130" stroke="#FFC107" stroke-width="2.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arry)"/>
+  <text x="150" y="175" text-anchor="middle" font-size="10" fill="#b58100" font-style="italic">не та причина →</text>
+  <text x="150" y="190" text-anchor="middle" font-size="10" fill="#b58100" font-style="italic">новая гипотеза</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arry" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#FFC107"/></marker>
+  </defs>
+
+  <text x="380" y="285" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">читай сообщение целиком — причина часто прямо в нём (ИИ помогает, проверяешь ты)</text>
+</svg>

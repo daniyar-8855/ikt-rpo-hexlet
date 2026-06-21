@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="280" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Чат-бот и ИИ-агент: в чём разница</text>
+
+  <!-- Чат-бот -->
+  <rect x="30" y="55" width="330" height="195" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#0d2b45">ЧАТ-БОТ</text>
+
+  <rect x="60" y="100" width="270" height="36" rx="6" fill="#2196F3"/>
+  <text x="195" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Вопрос → один ответ</text>
+
+  <text x="195" y="165" text-anchor="middle" font-size="12" fill="#0d2b45">отвечает и останавливается</text>
+  <text x="195" y="190" text-anchor="middle" font-size="12" fill="#0d2b45">без инструментов</text>
+  <text x="195" y="222" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">«как заказать билет»</text>
+
+  <!-- Агент -->
+  <rect x="400" y="55" width="330" height="195" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">ИИ-АГЕНТ</text>
+
+  <rect x="430" y="100" width="270" height="36" rx="6" fill="#4CAF50"/>
+  <text x="565" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Цель → серия шагов</text>
+
+  <text x="565" y="165" text-anchor="middle" font-size="12" fill="#1b5e20">использует инструменты</text>
+  <text x="565" y="190" text-anchor="middle" font-size="12" fill="#1b5e20">(поиск, код, файлы, API)</text>
+  <text x="565" y="222" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">сам находит рейс и оформляет</text>
+</svg>

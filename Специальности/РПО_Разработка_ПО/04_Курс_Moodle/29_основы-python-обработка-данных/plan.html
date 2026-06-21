@@ -1,0 +1,66 @@
+<h1>План учебного занятия</h1>
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+  <strong>Организация:</strong> ТОО «Колледж Хекслет Казахстан»<br>
+  <strong>Дисциплина:</strong> Применение информационно-коммуникационных и цифровых технологий<br>
+  <strong>Тема занятия:</strong> Основы Python для обработки данных<br>
+  <strong>Подготовил педагог:</strong> ____________________<br>
+  <strong>Дата:</strong> «___» __________ 20__ г.
+</div>
+<h2>1. Общие сведения</h2><ul>
+  <li><strong>Курс, группа:</strong> ____________________ (квалификация 4S06130103 «Разработчик ПО»)</li>
+  <li><strong>Тип занятия:</strong> комбинированное</li>
+  <li><strong>Продолжительность:</strong> 6 часов (3 пары, 270 мин)</li>
+  <li><strong>Результат обучения:</strong> РО 2.3 · <strong>Связь с ПМ:</strong> Разработка программных модулей</li></ul>
+<h2>2. Цели, задачи</h2>
+<p><strong>Цель:</strong> Сформировать базовые навыки обработки данных на Python: хранить данные в подходящих контейнерах, проходить по ним циклом, отбирать условием и считать простые показатели.</p><p><strong>Задачи:</strong></p><ul>
+  <li>научить выбирать контейнер данных (переменная, список, словарь) под задачу;</li>
+  <li>отработать проход по списку циклом <code>for</code> и отбор элементов условием <code>if</code>;</li>
+  <li>освоить функции <code>sum</code>, <code>len</code>, <code>max</code>, <code>min</code> для расчёта показателей;</li>
+  <li>сформировать привычку проверять пустые данные перед делением и доступом по индексу.</li>
+</ul>
+<h2>3. Ожидаемые результаты</h2><p>Обучающийся:</p><ul>
+  <li>различает переменную, список и словарь и выбирает контейнер по задаче;</li>
+  <li>читает и пишет цикл <code>for</code> с условием <code>if</code> и методом <code>append</code>;</li>
+  <li>считает сумму, количество, среднее, максимум и минимум списка;</li>
+  <li>объясняет и предупреждает типичную ошибку деления на ноль на пустом списке.</li>
+</ul>
+<h2>4. Необходимые ресурсы</h2><ul>
+  <li>Курс в Moodle: страница «Теория», тест и задание занятия 29.</li>
+  <li>Схемы: «Контейнеры данных», «Цикл for + условие if» (папка assets).</li>
+  <li>Компьютер с Python (или онлайн-интерпретатор), проектор, доступ к Moodle и интернету.</li>
+</ul>
+<h2>5. Ход занятия</h2>
+<h3>Пара 1. Хранение данных: переменная, список, словарь (90 мин)</h3>
+<table style="border-collapse:collapse;width:100%;margin:16px 0">
+  <tr><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Этап / Время</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия педагога</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия обучающегося</th></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Организационный момент (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Приветствие, проверка готовности и присутствующих</td><td style="border:1px solid #ccc;padding:8px 12px">Занимают места, готовятся к занятию</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Мотивация (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Вводит практической ситуацией (список цен из магазина), задаёт вопросы</td><td style="border:1px solid #ccc;padding:8px 12px">Обсуждают, предлагают варианты подсчёта</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Целеполагание (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Объявляет тему и цели занятия</td><td style="border:1px solid #ccc;padding:8px 12px">Записывают тему, формулируют ожидания</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Изучение нового материала (35 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Раскрывает переменную, список, словарь; демонстрирует схему контейнеров; показывает доступ по индексу и ключу</td><td style="border:1px solid #ccc;padding:8px 12px">Слушают, работают со схемой, задают вопросы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Закрепление (15 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Организует упр. 1 (выбор контейнера), разбирает «список vs словарь»</td><td style="border:1px solid #ccc;padding:8px 12px">Выполняют задание, отвечают</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Итог и рефлексия (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Возвращает к схеме: список — столбец, словарь — строка</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают, подводят итог пары</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Переход к следующей паре (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Ставит вопрос: как обойти весь список сразу?</td><td style="border:1px solid #ccc;padding:8px 12px">Фиксируют вопрос для пары 2</td></tr>
+</table>
+<h3>Пара 2. Цикл for и отбор условием if (90 мин)</h3>
+<table style="border-collapse:collapse;width:100%;margin:16px 0">
+  <tr><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Этап / Время</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия педагога</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия обучающегося</th></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Организационный момент (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Проверка готовности, повторение контейнеров</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают, настраиваются на работу</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Мотивация и целеполагание (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Показывает, зачем перебирать и фильтровать данные</td><td style="border:1px solid #ccc;padding:8px 12px">Обсуждают примеры из практики</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Изучение нового материала (35 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Демонстрирует цикл <code>for</code>, условие <code>if</code>, метод <code>append</code>; показывает схему «for + if»</td><td style="border:1px solid #ccc;padding:8px 12px">Слушают, разбирают схему, задают вопросы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Закрепление (25 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Организует упр. 2–3 (чтение цикла, добавление фильтра)</td><td style="border:1px solid #ccc;padding:8px 12px">Выполняют задания, проверяют результат</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Итог и рефлексия (15 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Подводит к алгоритму «пройти → проверить → отобрать»</td><td style="border:1px solid #ccc;padding:8px 12px">Формулируют алгоритм своими словами</td></tr>
+</table>
+<h3>Пара 3. Показатели, контроль и задание (90 мин)</h3>
+<table style="border-collapse:collapse;width:100%;margin:16px 0">
+  <tr><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Этап / Время</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия педагога</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия обучающегося</th></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Организационный момент (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Проверка готовности, повторение цикла и условия</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают на вопросы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Изучение нового материала (25 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Раскрывает <code>sum</code>, <code>len</code>, среднее, <code>max</code>/<code>min</code>; разбирает ошибку деления на ноль</td><td style="border:1px solid #ccc;padding:8px 12px">Слушают, записывают, разбирают мини-кейс</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Закрепление (20 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Организует упр. 4–5 (показатели, поиск ошибки)</td><td style="border:1px solid #ccc;padding:8px 12px">Выполняют задания, отвечают</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Контроль (15 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Запускает тест в Moodle (10 вопросов из банка)</td><td style="border:1px solid #ccc;padding:8px 12px">Проходят тест самопроверки</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Итог и рефлексия (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Возвращает к вопросам: какой контейнер, как отобрать, как свести</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают, подводят итог темы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Задание (15 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Поясняет вариантное задание и критерии приёмки</td><td style="border:1px solid #ccc;padding:8px 12px">Записывают, уточняют</td></tr>
+</table>
+<div style="background:#fff8e1;border-left:4px solid #FFC107;padding:12px 16px;margin:16px 0;border-radius:4px"><strong>Адаптация.</strong> При наличии обучающихся с особыми образовательными потребностями предусматриваются адаптация темпа, дополнительные пояснения и индивидуальные задания, одобренные методическим объединением.</div>
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Документ для преподавателя (поурочный план по форме приказа МОН РК № 130, приложение 8). Размещён скрытым от студентов.</em></p>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Кто отвечает за результат, выданный ИИ</text>
+
+  <!-- Шаг 1: задача -->
+  <rect x="30" y="80" width="170" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="115" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Человек</text>
+  <text x="115" y="124" text-anchor="middle" font-size="11" fill="#37474f">ставит задачу ИИ</text>
+
+  <!-- Шаг 2: ИИ -->
+  <rect x="295" y="80" width="170" height="60" rx="8" fill="#2196F3"/>
+  <text x="380" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">ИИ-инструмент</text>
+  <text x="380" y="124" text-anchor="middle" font-size="11" fill="#ffffff">выдаёт результат</text>
+
+  <!-- Шаг 3: проверка и ответственность -->
+  <rect x="560" y="80" width="170" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="645" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Человек</text>
+  <text x="645" y="118" text-anchor="middle" font-size="11" fill="#2e7d32">проверяет и</text>
+  <text x="645" y="132" text-anchor="middle" font-size="11" fill="#2e7d32">отвечает за итог</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M200 110 L295 110"/>
+    <path d="M465 110 L560 110"/>
+  </g>
+
+  <!-- Нижний блок: за что отвечает -->
+  <rect x="120" y="185" width="520" height="70" rx="8" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <text x="380" y="208" text-anchor="middle" font-size="13" font-weight="bold" fill="#5d4037">Ответственность остаётся на человеке</text>
+  <text x="380" y="228" text-anchor="middle" font-size="11" fill="#5d4037">соответствие закону · защита персональных данных · авторство контента</text>
+  <text x="380" y="244" text-anchor="middle" font-size="11" fill="#5d4037">ИИ — инструмент, а не субъект права</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+  </defs>
+
+  <text x="380" y="282" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">разработчик отвечает за то, что его продукт с ИИ соответствует закону</text>
+</svg>

@@ -1,0 +1,59 @@
+<h1>План учебного занятия</h1>
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+  <strong>Организация:</strong> ТОО «Колледж Хекслет Казахстан»<br>
+  <strong>Дисциплина:</strong> Применение информационно-коммуникационных и цифровых технологий<br>
+  <strong>Тема занятия:</strong> ИИ для отладки и тестирования кода<br>
+  <strong>Подготовил педагог:</strong> ____________________<br>
+  <strong>Дата:</strong> «___» __________ 20__ г.
+</div>
+<h2>1. Общие сведения</h2><ul>
+  <li><strong>Курс, группа:</strong> ____________________ (квалификация 4S06130103 «Разработчик ПО»)</li>
+  <li><strong>Тип занятия:</strong> комбинированное</li>
+  <li><strong>Продолжительность:</strong> 4 часа (2 пары, 180 мин)</li>
+  <li><strong>Результат обучения:</strong> РО 2.3 · <strong>Связь с ПМ:</strong> Тестирование ПО</li></ul>
+<h2>2. Цели, задачи</h2>
+<p><strong>Цель:</strong> Научить отлаживать и тестировать код с помощью ИИ: читать traceback, находить причину ошибки и проверять гипотезы, генерировать тесты для обычных, крайних и некорректных случаев.</p><p><strong>Задачи:</strong></p><ul>
+  <li>научить читать сообщение об ошибке (traceback) и находить в нём подсказку;</li>
+  <li>сформировать алгоритм отладки: ошибка → traceback → гипотеза с ИИ → проверка → тест;</li>
+  <li>показать, как безопасно формулировать запрос к ИИ (без секретов);</li>
+  <li>научить придумывать с ИИ набор тестов: обычные, крайние и некорректные случаи.</li>
+</ul>
+<h2>3. Ожидаемые результаты</h2><p>Обучающийся:</p><ul>
+  <li>читает traceback и находит тип ошибки, строку и описание;</li>
+  <li>формулирует запрос к ИИ об ошибке без передачи секретов и реальных данных;</li>
+  <li>проверяет гипотезу и исправление ИИ, а не чинит код «методом тыка»;</li>
+  <li>называет и приводит примеры трёх видов тестов.</li>
+</ul>
+<h2>4. Необходимые ресурсы</h2><ul>
+  <li>Курс в Moodle: страница «Теория», тест и задание занятия 28.</li>
+  <li>Схемы: «Алгоритм отладки с ИИ», «Три вида тестов» (папка assets).</li>
+  <li>Компьютер, проектор, доступ к Moodle и интернету.</li>
+</ul>
+<h2>5. Ход занятия</h2>
+<h3>Пара 1 — Отладка с ИИ (90 мин)</h3>
+<table style="border-collapse:collapse;width:100%;margin:16px 0">
+  <tr><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Этап / Время</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия педагога</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия обучающегося</th></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Организационный момент (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Приветствие, проверка готовности и присутствующих</td><td style="border:1px solid #ccc;padding:8px 12px">Занимают места, готовятся к занятию</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Мотивация (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Вводит практической ситуацией («код упал, красное сообщение»), задаёт вопросы</td><td style="border:1px solid #ccc;padding:8px 12px">Обсуждают, предлагают варианты</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Целеполагание (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Объявляет тему и цели занятия</td><td style="border:1px solid #ccc;padding:8px 12px">Записывают тему, формулируют ожидания</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Изучение нового материала (35 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Раскрывает понятие traceback, демонстрирует схему «Алгоритм отладки», показывает запрос к ИИ об ошибке (без секретов)</td><td style="border:1px solid #ccc;padding:8px 12px">Слушают, работают со схемой, задают вопросы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Закрепление (15 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Организует практику: чтение traceback, формулировка запроса к ИИ; разбор типичной ошибки</td><td style="border:1px solid #ccc;padding:8px 12px">Выполняют задания, отвечают</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Контроль (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Краткий устный опрос по алгоритму отладки</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают, проверяют себя</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Итог и рефлексия (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Возвращает к алгоритму: ошибка → причина → проверка</td><td style="border:1px solid #ccc;padding:8px 12px">Подводят итог</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Задание (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Поясняет переход ко второй паре и упражнения по отладке</td><td style="border:1px solid #ccc;padding:8px 12px">Записывают, уточняют</td></tr>
+</table>
+<h3>Пара 2 — Тестирование с ИИ (90 мин)</h3>
+<table style="border-collapse:collapse;width:100%;margin:16px 0">
+  <tr><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Этап / Время</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия педагога</th><th style="border:1px solid #ccc;padding:8px 12px;background:#e8f4fd;text-align:left">Действия обучающегося</th></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Организационный момент (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Проверка готовности, повторение алгоритма отладки</td><td style="border:1px solid #ccc;padding:8px 12px">Включаются в работу, повторяют</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Мотивация (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Показывает, как баг возвращается без теста (мини-кейс с пустым списком)</td><td style="border:1px solid #ccc;padding:8px 12px">Обсуждают, предлагают тест</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Изучение нового материала (35 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Раскрывает понятие теста, демонстрирует схему «Три вида тестов», показывает генерацию тестов с ИИ и крайние случаи</td><td style="border:1px solid #ccc;padding:8px 12px">Слушают, работают со схемой, задают вопросы</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Закрепление (20 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Организует практику: придумать набор тестов, проверить «исправление» ИИ; начало вариантного задания</td><td style="border:1px solid #ccc;padding:8px 12px">Выполняют задания, отвечают</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Контроль (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Запускает тест в Moodle (10 вопросов из банка)</td><td style="border:1px solid #ccc;padding:8px 12px">Проходят тест самопроверки</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Итог и рефлексия (10 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Возвращает к выводам: читать traceback, проверять ИИ, покрывать тестами</td><td style="border:1px solid #ccc;padding:8px 12px">Отвечают, подводят итог</td></tr>
+  <tr><td style="border:1px solid #ccc;padding:8px 12px">Задание (5 мин)</td><td style="border:1px solid #ccc;padding:8px 12px">Поясняет вариантное задание и критерии</td><td style="border:1px solid #ccc;padding:8px 12px">Записывают, уточняют</td></tr>
+</table>
+<div style="background:#fff8e1;border-left:4px solid #FFC107;padding:12px 16px;margin:16px 0;border-radius:4px"><strong>Адаптация.</strong> При наличии обучающихся с особыми образовательными потребностями предусматриваются адаптация темпа, дополнительные пояснения и индивидуальные задания, одобренные методическим объединением.</div>
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Документ для преподавателя (поурочный план по форме приказа МОН РК № 130, приложение 8). В Moodle размещается скрытым от студентов.</em></p>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

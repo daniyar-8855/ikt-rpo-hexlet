@@ -1,79 +1,147 @@
 <h1>Библиотеки Pandas и NumPy</h1>
 
-<p>Считать данные «вручную» циклами хорошо для понимания, но в реальности данных тысячи строк. Тогда подключают готовые библиотеки. <strong>NumPy</strong> быстро считает над массивами чисел, <strong>Pandas</strong> работает с таблицами (как Excel, но в коде). Одна строка заменяет целый цикл.</p>
+<h2>Практическая ситуация</h2>
 
+<p>Тебе скинули файл с тысячей заказов интернет-магазина и просят к завтрашнему дню: средний чек, число дорогих заказов и список товаров дороже 5000. Считать это вручную циклами <code>for</code> с <code>if</code> и <code>append</code> можно, но долго и легко ошибиться — одна опечатка, и весь отчёт неверный.</p>
+
+<p>В реальной работе так не делают. Подключают готовые библиотеки: <strong>NumPy</strong> для быстрых расчётов над числами и <strong>Pandas</strong> для таблиц. С ними одна строка заменяет целый цикл, а отчёт собирается за минуты, а не за вечер.</p>
+
+<p style="margin:16px 0"><img src="assets/30_shema-dataframe.svg" alt="DataFrame как таблица: столбцы, строки, доступ по столбцу" style="max-width:100%;height:auto"></p>
+
+<hr>
+
+<h2>Что ты научишься делать</h2>
+<ul>
+  <li>объяснять, зачем нужны NumPy и Pandas и чем они отличаются;</li>
+  <li>создавать NumPy-массив и считать по нему <code>mean()</code>, <code>sum()</code>;</li>
+  <li>представлять таблицу как DataFrame и обращаться к столбцу;</li>
+  <li>фильтровать строки таблицы по условию одной командой.</li>
+</ul>
+
+<hr>
+
+<h2>Почему это важно</h2>
+<p>Без библиотек обработка данных превращается в длинные циклы, где легко допустить ошибку и которые медленно работают на больших объёмах. NumPy и Pandas — это базовый инструмент любого, кто работает с данными: аналитика, отчёты, подготовка данных для машинного обучения.</p>
+<p>Связь с профессией: разработчик ПО постоянно достаёт данные из базы или файла и считает по ним показатели. Знание Pandas и NumPy — это то, что в вакансиях пишут как «обязательно», а не «будет плюсом». Эти же навыки — фундамент для анализа данных и ML.</p>
+
+<hr>
+
+<h2>Учимся читать схему</h2>
+<p>Посмотри на схему DataFrame выше. Ответь на вопросы:</p>
+<ul>
+  <li>где на схеме столбец, а где строка?</li>
+  <li>что возвращает запись <code>df["cena"]</code>?</li>
+  <li>как из одного столбца получить среднее значение одной командой?</li>
+</ul>
+
+<hr>
+
+<h2>Главное понятие</h2>
 <div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
-<strong>Чему ты научишься:</strong> зачем нужны NumPy и Pandas; что такое DataFrame; считать показатели по столбцу и фильтровать строки одной командой.
+  <strong>DataFrame</strong> — главный объект Pandas: таблица с именованными столбцами и строками, к каждому столбцу которой можно обратиться по имени и сразу посчитать по нему показатели.
 </div>
+<p>Проще: DataFrame — это «Excel внутри кода». Ты обращаешься к столбцу по имени (<code>df["cena"]</code>), и он ведёт себя как список чисел, но с готовыми методами расчёта.</p>
 
 <hr>
 
 <h2>NumPy: массивы чисел</h2>
-<p>Массив похож на список, но операции считаются быстро и сразу над всеми элементами:</p>
+<p><strong>NumPy</strong> — библиотека для работы с массивами чисел. Массив похож на список, но операции над ним считаются быстро и сразу над всеми элементами:</p>
 <pre><code>import numpy as np
 ceny = np.array([1500, 2000, 1800])
 print(ceny.mean())   # 1766.6 — среднее
 print(ceny.sum())    # 5300
-print(ceny * 2)      # [3000 4000 3600]</code></pre>
-<p>Не нужен цикл — <code>mean()</code>, <code>sum()</code>, умножение применяются ко всему массиву.</p>
+print(ceny * 2)      # [3000 4000 3600] — умножили все сразу</code></pre>
+<p>Не нужен цикл — <code>mean()</code>, <code>sum()</code>, умножение применяются ко всему массиву сразу. Это называется векторной операцией.</p>
+
+<p style="margin:16px 0"><img src="assets/30_shema-numpy-vektor.svg" alt="NumPy: операция применяется ко всем элементам массива сразу" style="max-width:100%;height:auto"></p>
+
+<hr>
 
 <h2>Pandas: таблицы данных</h2>
-<p>Главный объект — <strong>DataFrame</strong> (таблица со столбцами и строками):</p>
+<p><strong>Pandas</strong> работает с таблицами. Главный объект — <strong>DataFrame</strong> (таблица со столбцами и строками):</p>
 <pre><code>import pandas as pd
 data = {"tovar": ["Мышь", "Клав.", "Монитор"],
         "cena":  [1500, 2000, 9000]}
 df = pd.DataFrame(data)
 print(df["cena"].mean())   # среднее по столбцу
 print(df["cena"].max())    # максимум</code></pre>
+<p>Столбец <code>df["cena"]</code> ведёт себя как список чисел, но с готовыми методами: <code>mean()</code>, <code>sum()</code>, <code>max()</code>, <code>min()</code>, <code>count()</code>.</p>
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse">
-<tr><th>Метод столбца</th><th>Что делает</th></tr>
-<tr><td>.mean()</td><td>среднее</td></tr>
-<tr><td>.sum()</td><td>сумма</td></tr>
-<tr><td>.max() / .min()</td><td>наибольшее / наименьшее</td></tr>
-<tr><td>.count()</td><td>количество значений</td></tr>
-</table>
+<hr>
 
 <h2>Фильтрация строк</h2>
+<p>Чтобы оставить только строки, удовлетворяющие условию:</p>
 <pre><code>dorogie = df[df["cena"] >= 2000]
 print(dorogie)</code></pre>
-<p>Одна строка вместо цикла с <code>if</code> и <code>append</code>.</p>
+<p>Одна строка вместо цикла с <code>if</code> и <code>append</code>. Это и есть сила Pandas: меньше кода, понятнее результат, меньше шансов ошибиться.</p>
 
 <h3>Мини-кейс</h3>
-<p>В таблице 1000 заказов со столбцом <code>summa</code>. Средний чек — <code>df["summa"].mean()</code>; число заказов дороже 5000 — <code>len(df[df["summa"] &gt; 5000])</code>. Две строки вместо длинного цикла.</p>
+<p>В таблице 1000 заказов со столбцом <code>summa</code>. Нужно: средний чек и число заказов дороже 5000.</p>
+<pre><code>sredniy = df["summa"].mean()
+mnogo   = len(df[df["summa"] > 5000])</code></pre>
+<p>Две строки вместо длинного цикла. Вернёмся к ситуации из начала урока — задача «на вечер» решается за пару минут.</p>
 
-<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
-<strong>Ошибка:</strong> забыть import pandas / numpy.<br>
-<strong>Почему:</strong> без импорта Python не знает этих имён (NameError).<br>
-<strong>Как правильно:</strong> импорт в начале файла.
-</div>
+<hr>
 
+<h2>Разбор типичной ошибки</h2>
 <div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
-<strong>Ошибка:</strong> опечатка в имени столбца — <code>df["Cena"]</code> вместо <code>df["cena"]</code>.<br>
-<strong>Почему:</strong> имена чувствительны к регистру (KeyError).<br>
-<strong>Как правильно:</strong> проверить имена через <code>df.columns</code>.
+  <strong>Ошибка.</strong> Обратиться к столбцу с другим регистром: <code>df["Cena"]</code>, когда столбец называется <code>cena</code>.<br>
+  <strong>Почему это ошибка.</strong> Имена столбцов в Pandas чувствительны к регистру. <code>"Cena"</code> и <code>"cena"</code> — разные имена, Pandas такого столбца не находит и выдаёт <code>KeyError</code>. Похожая беда — забыть <code>import pandas as pd</code> или <code>import numpy as np</code>: тогда Python не знает имён и выдаёт <code>NameError</code>.<br>
+  <strong>Как правильно.</strong> Делай импорты в начале файла и проверяй точные имена столбцов через <code>df.columns</code> — копируй имя оттуда, а не пиши по памяти.
 </div>
 
 <hr>
 
-<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
-<strong>Итог — что теперь делать:</strong>
+<h2>Практика</h2>
+<p>Ответь письменно:</p>
+<ol>
+  <li>Дан массив <code>np.array([2, 4, 6])</code>. Какие значения вернут <code>.mean()</code> и <code>.sum()</code>? Объясни, почему цикл здесь не нужен.</li>
+  <li>Есть DataFrame <code>df</code> со столбцом <code>summa</code>. Напиши строку, которая оставит только заказы дороже 5000, и строку, которая посчитает средний <code>summa</code>.</li>
+</ol>
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+  <strong>Образец (часть ответа на пункт 1):</strong> «<code>.mean()</code> вернёт 4.0 (среднее), <code>.sum()</code> вернёт 12. Цикл не нужен, потому что NumPy применяет операцию сразу ко всем элементам массива — это векторная операция».
+</div>
+
+<hr>
+
+<h2>Самопроверка</h2>
 <ul>
-<li>NumPy — для быстрых расчётов над массивами чисел;</li>
-<li>Pandas — для таблиц: DataFrame = таблица со столбцами;</li>
-<li>считай показатели по столбцу: <code>mean()</code>, <code>sum()</code>, <code>max()</code>;</li>
-<li>фильтруй строки: <code>df[df["поле"] &gt; значение]</code>.</li>
+  <li>Я умею создать NumPy-массив и посчитать по нему <code>mean()</code> и <code>sum()</code>.</li>
+  <li>Я знаю, что DataFrame — это таблица, и умею обратиться к столбцу через <code>df["имя"]</code>.</li>
+  <li>Я умею отфильтровать строки условием <code>df[df["поле"] > значение]</code>.</li>
 </ul>
+
+<hr>
+
+<h2>Подумай</h2>
+<ul>
+  <li>Какую рутинную задачу с данными (в учёбе или подработке) ты мог бы ускорить с Pandas вместо ручного цикла?</li>
+  <li>Почему на больших данных «одна команда над всем столбцом» надёжнее, чем цикл, который ты пишешь сам?</li>
+</ul>
+
+<hr>
+
+<h2>Итог</h2>
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+  <strong>Что теперь делать:</strong>
+  <ul>
+    <li>бери NumPy для быстрых расчётов над массивами чисел — операция применяется ко всем элементам сразу;</li>
+    <li>бери Pandas для таблиц: DataFrame = таблица со столбцами и строками;</li>
+    <li>считай показатели по столбцу: <code>df["поле"].mean()</code>, <code>.sum()</code>, <code>.max()</code>;</li>
+    <li>фильтруй строки условием <code>df[df["поле"] > значение]</code>;</li>
+    <li>проверяй имена столбцов через <code>df.columns</code> и не забывай импорты.</li>
+  </ul>
 </div>
 
 <hr>
 
 <h2>Полезные ссылки</h2>
 <ul>
-<li><a href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener">Pandas — 10 минут до старта</a></li>
-<li><a href="https://numpy.org/doc/stable/user/absolute_beginners.html" target="_blank" rel="noopener">NumPy для начинающих</a></li>
-<li><a href="https://realpython.com/pandas-dataframe/" target="_blank" rel="noopener">Pandas: знакомство с DataFrame</a></li>
+  <li><a href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener">Pandas — 10 минут до старта</a></li>
+  <li><a href="https://numpy.org/doc/stable/user/absolute_beginners.html" target="_blank" rel="noopener">NumPy для начинающих</a></li>
+  <li><a href="https://realpython.com/pandas-dataframe/" target="_blank" rel="noopener">Pandas: знакомство с DataFrame (Real Python)</a></li>
 </ul>
 
 <hr>
+<p style="font-size:0.85em;color:#666"><em>Источник: официальная документация Pandas (User Guide) и NumPy (Absolute Beginners); обзорные материалы по анализу данных на Python.</em></p>
 <p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

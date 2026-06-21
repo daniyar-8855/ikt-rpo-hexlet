@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Цикл for + условие if: проход по списку с отбором</text>
+
+  <!-- Исходный список -->
+  <rect x="30" y="60" width="160" height="42" rx="8" fill="#2196F3"/>
+  <text x="110" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">Список цен</text>
+  <text x="110" y="95" text-anchor="middle" font-size="11" fill="#ffffff">[1500, 2000, 1800]</text>
+
+  <!-- for -->
+  <rect x="290" y="60" width="180" height="42" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">for c in ceny</text>
+  <text x="380" y="95" text-anchor="middle" font-size="10" fill="#37474f">берём по одному элементу</text>
+
+  <!-- if (ромб-условие) -->
+  <polygon points="380,135 480,180 380,225 280,180" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <text x="380" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#5d4037">if c &gt;= 1800 ?</text>
+  <text x="380" y="194" text-anchor="middle" font-size="10" fill="#5d4037">условие отбора</text>
+
+  <!-- Да -->
+  <rect x="540" y="155" width="190" height="50" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="635" y="178" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">dorogie.append(c)</text>
+  <text x="635" y="194" text-anchor="middle" font-size="10" fill="#2e7d32">добавить в результат</text>
+
+  <!-- Нет -->
+  <rect x="285" y="255" width="190" height="44" rx="8" fill="#e8f4fd" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="380" y="278" text-anchor="middle" font-size="12" fill="#0d2b45">пропустить элемент</text>
+  <text x="380" y="293" text-anchor="middle" font-size="10" fill="#37474f">взять следующий</text>
+
+  <!-- Результат -->
+  <rect x="540" y="60" width="190" height="44" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="635" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">Результат</text>
+  <text x="635" y="97" text-anchor="middle" font-size="11" fill="#1b5e20">[2000, 1800]</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M190 81 L290 81"/>
+    <path d="M380 102 L380 133"/>
+  </g>
+  <!-- Да -> append -->
+  <path d="M480 180 L540 180" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#arrg)"/>
+  <text x="510" y="172" text-anchor="middle" font-size="11" fill="#2e7d32" font-weight="bold">Да</text>
+  <!-- Нет -> пропустить -->
+  <path d="M380 225 L380 255" stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <text x="398" y="245" text-anchor="middle" font-size="11" fill="#37474f" font-weight="bold">Нет</text>
+  <!-- append -> результат -->
+  <path d="M635 155 L635 104" stroke="#4CAF50" stroke-width="2.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arrg)"/>
+  <!-- пропустить -> назад к for (следующий шаг) -->
+  <path d="M285 277 Q150 277 150 102" stroke="#90caf9" stroke-width="2.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+  <text x="150" y="200" text-anchor="middle" font-size="10" fill="#37474f" font-style="italic">следующий</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+</svg>

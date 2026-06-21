@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="250" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Получение госуслуги онлайн: 5 шагов</text>
+
+  <!-- Шаг 1: Вход -->
+  <rect x="20" y="70" width="130" height="60" rx="8" fill="#2196F3"/>
+  <text x="85" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. Вход</text>
+  <text x="85" y="114" text-anchor="middle" font-size="11" fill="#ffffff">ЭЦП / SMS / биометрия</text>
+
+  <!-- Шаг 2: Выбор услуги -->
+  <rect x="180" y="70" width="130" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="245" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">2. Выбор услуги</text>
+  <text x="245" y="114" text-anchor="middle" font-size="11" fill="#37474f">каталог или поиск</text>
+
+  <!-- Шаг 3: Заявка -->
+  <rect x="340" y="70" width="130" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="405" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">3. Заявка</text>
+  <text x="405" y="114" text-anchor="middle" font-size="11" fill="#37474f">заполнить форму</text>
+
+  <!-- Шаг 4: Подпись -->
+  <rect x="500" y="70" width="130" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="565" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">4. Подпись</text>
+  <text x="565" y="114" text-anchor="middle" font-size="11" fill="#37474f">ЭЦП / разовый код</text>
+
+  <!-- Шаг 5: Результат -->
+  <rect x="615" y="160" width="130" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="680" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">5. Результат</text>
+  <text x="680" y="204" text-anchor="middle" font-size="11" fill="#2e7d32">PDF в кабинете</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M150 100 L180 100"/>
+    <path d="M310 100 L340 100"/>
+    <path d="M470 100 L500 100"/>
+  </g>
+  <path d="M565 130 Q565 190 615 190" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#arrg)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+
+  <text x="380" y="240" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">не выходя из дома: вход по ЭЦП → услуга → заявка → подпись → готовая справка</text>
+</svg>
