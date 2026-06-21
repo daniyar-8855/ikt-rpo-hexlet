@@ -1,0 +1,66 @@
+<h1>Промпт-инжиниринг для кодовых задач</h1>
+
+<p>Один и тот же ИИ на расплывчатый запрос даёт бесполезный ответ, а на точный — почти готовое решение. Разница — в промпте (запросе). Промпт-инжиниринг — навык формулировать запросы так, чтобы получать качественный результат.</p>
+
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Чему ты научишься:</strong> строить структурированный промпт; применять приёмы (роль, контекст, примеры, формат); итеративно улучшать промпт.
+</div>
+
+<hr>
+
+<h2>Анатомия хорошего промпта</h2>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse">
+<tr><th>Часть</th><th>Зачем</th><th>Пример</th></tr>
+<tr><td>Роль/контекст</td><td>задать рамку</td><td>«Ты опытный Python-разработчик»</td></tr>
+<tr><td>Задача</td><td>что нужно</td><td>«напиши функцию валидации e-mail»</td></tr>
+<tr><td>Вход/выход</td><td>конкретика</td><td>«строка → True/False»</td></tr>
+<tr><td>Ограничения</td><td>рамки</td><td>«только стандартная библиотека»</td></tr>
+<tr><td>Формат ответа</td><td>как оформить</td><td>«код + краткое объяснение»</td></tr>
+</table>
+
+<h2>Приёмы промпт-инжиниринга</h2>
+<ul>
+<li><strong>Конкретика</strong> вместо общего;</li>
+<li><strong>примеры (few-shot):</strong> 1–2 примера вход→выход;</li>
+<li><strong>пошаговость:</strong> «объясни по шагам, потом код»;</li>
+<li><strong>итерация:</strong> уточняй запрос, если не получилось.</li>
+</ul>
+
+<h3>Мини-кейс</h3>
+<p>«Сделай парсер» — бесполезно. Уточнённый: «Python-функция: из строки <code>имя=значение</code> вернуть словарь; пример <code>a=1;b=2</code> → <code>{'a':'1','b':'2'}</code>; без библиотек» — рабочее решение. Вывод: добавляй пример вход→выход.</p>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> слишком общий промпт («помоги с кодом»).<br>
+<strong>Почему:</strong> ИИ не знает деталей — ответ мимо.<br>
+<strong>Как правильно:</strong> язык, задача, вход/выход, ограничения, пример.
+</div>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> принять первый ответ и не итерировать.<br>
+<strong>Почему:</strong> часто нужна 1–2 уточняющих итерации.<br>
+<strong>Как правильно:</strong> уточнять промпт по результату.
+</div>
+
+<hr>
+
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Итог — что теперь делать:</strong>
+<ul>
+<li>структурируй промпт: роль, задача, вход/выход, ограничения, формат;</li>
+<li>добавляй примеры вход→выход;</li>
+<li>итерируй, пока результат не станет рабочим;</li>
+<li>даже идеальный промпт не отменяет проверку кода.</li>
+</ul>
+</div>
+
+<hr>
+
+<h2>Полезные ссылки</h2>
+<ul>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener">OpenAI — руководство по промпт-инжинирингу</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs/prompting-intro" target="_blank" rel="noopener">Google — введение в промптинг</a></li>
+<li><a href="https://docs.github.com/ru/copilot/using-github-copilot/prompt-engineering-for-github-copilot" target="_blank" rel="noopener">GitHub Copilot — советы по запросам</a></li>
+</ul>
+
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

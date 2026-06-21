@@ -1,0 +1,89 @@
+<h1>Устройство ПК, операционные системы и файловая система</h1>
+
+<p>«У меня работает, а у него — нет». Чаще всего дело не в коде, а в окружении: другая ОС, другой путь к файлу, неверный регистр в имени. Чтобы такие проблемы не съедали часы, нужно понимать, на чём и где выполняется твоя программа.</p>
+
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Чему ты научишься:</strong> понимать, какие компоненты ПК влияют на разработку; что делает ОС и чем важен Linux; уверенно ориентироваться в путях, расширениях и структуре проекта; не наступать на грабли с путями и именами.
+</div>
+
+<hr>
+
+<h2>Из чего состоит компьютер</h2>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse">
+<tr><th>Компонент</th><th>За что отвечает</th><th>Почему важно тебе</th></tr>
+<tr><td>Процессор (CPU)</td><td>вычисления</td><td>скорость сборки и тестов</td></tr>
+<tr><td>Память (RAM)</td><td>данные «здесь и сейчас»</td><td>сколько программ/контейнеров потянешь</td></tr>
+<tr><td>Накопитель (SSD/HDD)</td><td>хранение файлов</td><td>SSD кратно ускоряет работу</td></tr>
+<tr><td>Видеокарта (GPU)</td><td>графика, вычисления</td><td>игры, графика, обучение ИИ</td></tr>
+</table>
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+Для разработки критичнее всего <strong>RAM и SSD</strong>, а не «самый мощный процессор».
+</div>
+
+<hr>
+
+<h2>Операционная система</h2>
+<p><strong>ОС</strong> — посредник между тобой, приложениями и «железом». Управляет процессами, памятью, файлами и доступом.</p>
+<h3>Windows или Linux?</h3>
+<ul>
+<li><strong>Windows</strong> — привычная среда, много прикладных программ.</li>
+<li><strong>Linux</strong> — на нём работает большинство серверов; туда «уезжает» твой код в продакшене.</li>
+</ul>
+<p>Знать обе ОС — норма. Часто на Windows ставят Linux-окружение (WSL, контейнеры), чтобы среда совпадала с сервером.</p>
+
+<hr>
+
+<h2>Файловая система</h2>
+<p><strong>Путь</strong> — адрес файла. Абсолютный — от корня (<code>/home/user/app/index.js</code>), относительный — от текущей папки (<code>./src/index.js</code>, <code>../data/file.csv</code>).</p>
+<ul>
+<li><strong>Расширение</strong> (<code>.js</code>, <code>.py</code>) подсказывает тип файла, но не гарантирует его.</li>
+<li><strong>Регистр:</strong> в Linux <code>File.js</code> и <code>file.js</code> — разные файлы, в Windows — один.</li>
+<li><strong>Скрытые файлы</strong> (<code>.gitignore</code>, <code>.env</code>) начинаются с точки.</li>
+</ul>
+<p>Подводка — типовая структура проекта:</p>
+<pre><code>app/
+  src/      исходный код
+  tests/    тесты
+  docs/     документация
+  data/     данные
+  README.md описание</code></pre>
+
+<h3>Мини-кейс</h3>
+<p>Код работает у тебя, но падает на сервере «файл не найден». В коде путь <code>Data/users.csv</code>, на сервере файл — <code>data/users.csv</code>. Причина: Linux чувствителен к регистру.</p>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> пробелы и кириллица в путях (<code>мой проект/файл 1.py</code>).<br>
+<strong>Почему:</strong> ломает команды терминала, импорт, развёртывание.<br>
+<strong>Как правильно:</strong> латиница, нижний регистр, дефис: <code>my-project/file1.py</code>.
+</div>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> жёсткий абсолютный путь <code>C:\Users\Ivan\...</code>.<br>
+<strong>Почему:</strong> у коллеги/на сервере такого пути нет.<br>
+<strong>Как правильно:</strong> относительные пути от корня проекта.
+</div>
+
+<hr>
+
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Итог — что теперь делать:</strong>
+<ul>
+<li>оценивай компьютер по RAM и SSD, а не только по процессору;</li>
+<li>привыкай к Linux — твой код будет работать там;</li>
+<li>используй относительные пути и единый стиль имён (латиница, нижний регистр, без пробелов);</li>
+<li>держи структуру проекта в порядке с первого дня.</li>
+</ul>
+</div>
+
+<hr>
+
+<h2>Полезные ссылки</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/ru-ru/windows/wsl/" target="_blank" rel="noopener">Microsoft Learn — WSL: запуск Linux в Windows</a></li>
+<li><a href="https://ubuntu.com/tutorials/command-line-for-beginners" target="_blank" rel="noopener">Командная строка для начинающих (Ubuntu)</a></li>
+<li><a href="https://docs.github.com/ru/get-started" target="_blank" rel="noopener">GitHub Docs — начало работы и структура репозитория</a></li>
+<li><a href="https://developer.mozilla.org/ru/docs/Learn/Common_questions/Web_mechanics/What_are_URLs" target="_blank" rel="noopener">MDN — что такое пути и URL</a></li>
+</ul>
+
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

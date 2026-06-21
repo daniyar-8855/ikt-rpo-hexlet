@@ -1,0 +1,64 @@
+<h1>Порталы открытых данных (data.egov.kz) и API</h1>
+
+<p>Где взять реальные данные для проекта, дашборда или анализа? Не выдумывать, а брать из открытых источников. Государство публикует наборы на data.egov.kz, а многие сервисы отдают данные через API. Уметь находить открытые данные и понимать API — база для работы с данными и интеграций.</p>
+
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Чему ты научишься:</strong> находить и скачивать открытые данные; понимать, что такое API; различать форматы (CSV, JSON).
+</div>
+
+<hr>
+
+<h2>Открытые данные</h2>
+<p><strong>Открытые данные</strong> — наборы, опубликованные свободно для повторного использования. На <strong>data.egov.kz</strong> — статистика, справочники, показатели по регионам и отраслям (часто CSV/XLSX).</p>
+<p>Зачем разработчику: реальные данные для дашбордов, прототипов, учебных проектов — без нарушения приватности (данные обезличены).</p>
+
+<h2>Что такое API</h2>
+<p><strong>API</strong> — способ одной программы запрашивать данные/функции у другой. Программа делает <strong>запрос</strong> и получает <strong>ответ</strong> (обычно JSON), без ручного скачивания.</p>
+<p>Идея: приложение запрашивает курс валют через API банка и показывает актуальные цифры автоматически.</p>
+
+<h2>Форматы данных</h2>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse">
+<tr><th>Формат</th><th>Что это</th><th>Удобство</th></tr>
+<tr><td>CSV</td><td>таблица, значения через запятую</td><td>просто, открывается в Excel</td></tr>
+<tr><td>JSON</td><td>структура «ключ–значение»</td><td>удобно для API и кода</td></tr>
+<tr><td>XLSX</td><td>таблица Excel</td><td>для людей, не для кода</td></tr>
+</table>
+
+<h3>Мини-кейс</h3>
+<p>Студент «придумал» цифры населения городов для дашборда. Преподаватель попросил реальные. Решение: скачать набор с data.egov.kz (CSV) и построить дашборд на настоящих данных.</p>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> использовать выдуманные данные «для вида».<br>
+<strong>Почему:</strong> выводы недостоверны.<br>
+<strong>Как правильно:</strong> брать открытые данные из официальных источников.
+</div>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> «открытые данные = можно публиковать что угодно о людях».<br>
+<strong>Почему:</strong> открытые данные обезличены; персональные так публиковать нельзя.<br>
+<strong>Как правильно:</strong> работать с обезличенными наборами.
+</div>
+
+<hr>
+
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Итог — что теперь делать:</strong>
+<ul>
+<li>бери реальные данные с data.egov.kz;</li>
+<li>понимай API как программный способ получать данные (запрос → ответ JSON);</li>
+<li>различай форматы: CSV/JSON — для кода, XLSX — для людей;</li>
+<li>не путай открытые данные с персональными.</li>
+</ul>
+</div>
+
+<hr>
+
+<h2>Полезные ссылки</h2>
+<ul>
+<li><a href="https://data.egov.kz" target="_blank" rel="noopener">Портал открытых данных data.egov.kz</a></li>
+<li><a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Client-side_web_APIs/Introduction" target="_blank" rel="noopener">Что такое API (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank" rel="noopener">Формат JSON (MDN)</a></li>
+</ul>
+
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>

@@ -1,0 +1,11 @@
+# Временные файлы Office (блокировки при открытом документе)
+~$*
+*.tmp
+
+# Локальные настройки машины
+.claude/settings.local.json
+
+# Системные файлы ОС
+Thumbs.db
+desktop.ini
+.DS_Store

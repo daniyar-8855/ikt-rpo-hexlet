@@ -1,0 +1,82 @@
+<h1>Командная строка и терминал</h1>
+
+<p>Графический интерфейс удобен, пока задач немного. Но развернуть проект, установить пакеты, закоммитить код, запустить тесты на сервере — всё это делается в терминале. Разработчик, который боится командной строки, работает медленно и зависит от чужих инструкций.</p>
+
+<div style="background:#e8f4fd;border-left:4px solid #2196F3;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Чему ты научишься:</strong> понимать, зачем нужен терминал; перемещаться по файловой системе и управлять файлами командами; читать структуру команды и находить справку.
+</div>
+
+<hr>
+
+<h2>Зачем терминал, если есть графика</h2>
+<ul>
+<li><strong>Скорость:</strong> одна команда заменяет десяток кликов.</li>
+<li><strong>Автоматизация:</strong> команды собираются в скрипты.</li>
+<li><strong>Сервер:</strong> на удалённой машине часто нет графики — только терминал.</li>
+<li><strong>Инструменты:</strong> git, npm, pip, docker запускаются командами.</li>
+</ul>
+
+<hr>
+
+<h2>Как устроена команда</h2>
+<pre><code>команда  флаги      аргументы
+  ls      -l         /home/user</code></pre>
+<ul>
+<li><strong>Команда</strong> — что сделать (<code>ls</code>, <code>cd</code>, <code>mkdir</code>).</li>
+<li><strong>Флаги</strong> меняют поведение (<code>-l</code> — подробно, <code>-a</code> — со скрытыми).</li>
+<li><strong>Аргументы</strong> — над чем работать (путь, имя файла).</li>
+</ul>
+
+<h2>Базовый набор команд</h2>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse">
+<tr><th>Действие</th><th>bash (Linux)</th><th>PowerShell (Windows)</th></tr>
+<tr><td>где я</td><td><code>pwd</code></td><td><code>Get-Location</code></td></tr>
+<tr><td>список файлов</td><td><code>ls -l</code></td><td><code>Get-ChildItem</code></td></tr>
+<tr><td>перейти в папку</td><td><code>cd src</code></td><td><code>cd src</code></td></tr>
+<tr><td>создать папку</td><td><code>mkdir app</code></td><td><code>mkdir app</code></td></tr>
+<tr><td>создать файл</td><td><code>touch f.txt</code></td><td><code>New-Item f.txt</code></td></tr>
+<tr><td>удалить</td><td><code>rm f.txt</code></td><td><code>Remove-Item f.txt</code></td></tr>
+<tr><td>справка</td><td><code>ls --help</code></td><td><code>Get-Help ls</code></td></tr>
+</table>
+
+<h3>Мини-кейс</h3>
+<p>Создать папку <code>app</code> с подпапками <code>src</code> и <code>tests</code> — тремя командами:</p>
+<pre><code>mkdir app
+cd app
+mkdir src tests</code></pre>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> <code>rm -rf</code> в неизвестной папке «чтобы почистить».<br>
+<strong>Почему:</strong> в терминале нет корзины — данные не вернуть.<br>
+<strong>Как правильно:</strong> сначала <code>pwd</code> и <code>ls</code> — убедись, что ты там, где думаешь.
+</div>
+
+<div style="background:#fdecea;border-left:4px solid #f44336;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Ошибка:</strong> путь с пробелом без кавычек <code>cd Мои файлы</code>.<br>
+<strong>Почему:</strong> терминал примет «Мои» и «файлы» за два аргумента.<br>
+<strong>Как правильно:</strong> <code>cd "Мои файлы"</code> или имена без пробелов.
+</div>
+
+<hr>
+
+<div style="background:#e8f5e9;border-left:4px solid #4CAF50;padding:12px 16px;margin:16px 0;border-radius:4px">
+<strong>Итог — что теперь делать:</strong>
+<ul>
+<li>начинай с <code>pwd</code>/<code>ls</code> — понимай, где находишься;</li>
+<li>выучи базовый набор — он почти одинаков в bash и PowerShell;</li>
+<li>незнакомую команду проверяй через <code>--help</code> перед запуском;</li>
+<li>опасные команды (<code>rm</code>) применяй осознанно.</li>
+</ul>
+</div>
+
+<hr>
+
+<h2>Полезные ссылки</h2>
+<ul>
+<li><a href="https://ubuntu.com/tutorials/command-line-for-beginners" target="_blank" rel="noopener">Командная строка для начинающих (Ubuntu)</a></li>
+<li><a href="https://learn.microsoft.com/ru-ru/powershell/scripting/learn/ps101/01-getting-started" target="_blank" rel="noopener">Microsoft Learn — основы PowerShell</a></li>
+<li><a href="https://learn.microsoft.com/ru-ru/windows/wsl/" target="_blank" rel="noopener">Microsoft Learn — WSL (Linux в Windows)</a></li>
+</ul>
+
+<hr>
+<p style="font-size:0.85em;color:#666"><em>Материал разработан рабочей группой ТОО «Колледж Хекслет Казахстан» и одобрен к использованию в обучении решением Педагогического совета.</em></p>
