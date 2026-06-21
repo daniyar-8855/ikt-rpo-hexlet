@@ -1,0 +1,19 @@
+# Единые переносы строк на любой ОС (Windows/macOS/Linux)
+* text=auto
+
+# Текстовые форматы проекта
+*.md   text
+*.html text
+*.gift text
+*.svg  text
+*.ps1  text
+*.txt  text
+
+# Бинарные форматы — не трогать
+*.docx binary
+*.pdf  binary
+*.xlsx binary
+*.xls  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
