@@ -107,7 +107,7 @@
 
 ## Полезные ссылки
 
-- [Хекслет (ru.hexlet.io)](https://ru.hexlet.io)
+- [Хекслет (kz.hexlet.io)](https://kz.hexlet.io)
 - [Stepik](https://stepik.org)
 - [Coursera](https://www.coursera.org)
 
