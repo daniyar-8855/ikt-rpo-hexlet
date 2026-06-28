@@ -42,7 +42,7 @@
 ```python
 import numpy as np
 ceny = np.array([1500, 2000, 1800])
-print(ceny.mean())   # 1766.6 — среднее
+print(ceny.mean())   # 1766.67 — среднее
 print(ceny.sum())    # 5300
 print(ceny * 2)      # [3000 4000 3600] — умножили все сразу
 ```
