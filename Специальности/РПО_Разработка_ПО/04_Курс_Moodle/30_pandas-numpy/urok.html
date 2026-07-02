@@ -51,6 +51,7 @@ ceny = np.array([1500, 2000, 1800])
 print(ceny.mean())   # 1766.67 — среднее
 print(ceny.sum())    # 5300
 print(ceny * 2)      # [3000 4000 3600] — умножили все сразу</code></pre>
+<p>NumPy — внешняя библиотека, её нет в Python по умолчанию: один раз её ставят в терминале командой <code>pip install numpy</code>, а строка <code>import numpy as np</code> подключает её в программу (и даёт короткое имя <code>np</code>). То же и для Pandas ниже — <code>pip install pandas</code>.</p>
 <p>Не нужен цикл — <code>mean()</code>, <code>sum()</code>, умножение применяются ко всему массиву сразу. Это называется векторной операцией.</p>
 
 <p style="margin:16px 0"><img src="assets/30_shema-numpy-vektor.svg" alt="NumPy: операция применяется ко всем элементам массива сразу" style="max-width:100%;height:auto"></p>
