@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#ffffff"/>
+
+  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Структура нормативного акта</text>
+
+  <!-- Закон (НПА) -->
+  <rect x="280" y="60" width="200" height="48" rx="8" fill="#2196F3"/>
+  <text x="380" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">Закон (НПА)</text>
+  <text x="380" y="100" text-anchor="middle" font-size="11" fill="#ffffff">название, номер, дата</text>
+
+  <!-- Глава -->
+  <rect x="280" y="138" width="200" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Глава / раздел</text>
+
+  <!-- Статья -->
+  <rect x="280" y="210" width="200" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="237" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Статья</text>
+
+  <!-- Пункт -->
+  <rect x="280" y="282" width="200" height="30" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="302" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Пункт / подпункт</text>
+
+  <!-- Стрелки вниз -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M380 108 L380 138"/>
+    <path d="M380 182 L380 210"/>
+  </g>
+  <path d="M380 254 L380 282" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#arrg)"/>
+
+  <!-- Пояснение справа -->
+  <rect x="520" y="210" width="210" height="44" rx="8" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <text x="625" y="231" text-anchor="middle" font-size="11" fill="#5d4037">Ссылаться нужно на</text>
+  <text x="625" y="246" text-anchor="middle" font-size="11" font-weight="bold" fill="#5d4037">конкретную статью и пункт</text>
+  <path d="M520 232 L482 232" stroke="#FFC107" stroke-width="2" fill="none" marker-end="url(#arry)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+    <marker id="arry" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#FFC107"/></marker>
+  </defs>
+
+  <text x="150" y="160" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">От общего —</text>
+  <text x="150" y="178" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">к частному:</text>
+  <text x="150" y="200" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">акт → статья → пункт</text>
+</svg>

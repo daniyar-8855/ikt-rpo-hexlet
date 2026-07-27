@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Чек-лист готовности мини-проекта</text>
+
+  <!-- Пункт 1 -->
+  <rect x="60" y="55" width="640" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="90" y="80" font-size="16" font-weight="bold" fill="#2196F3">&#10003;</text>
+  <text x="120" y="80" font-size="13" fill="#0d2b45">Задача сформулирована одним предложением: что и зачем делаю</text>
+
+  <!-- Пункт 2 -->
+  <rect x="60" y="105" width="640" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="90" y="130" font-size="16" font-weight="bold" fill="#2196F3">&#10003;</text>
+  <text x="120" y="130" font-size="13" fill="#0d2b45">Данные тестовые или обезличенные (без реальных персональных данных)</text>
+
+  <!-- Пункт 3 -->
+  <rect x="60" y="155" width="640" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="90" y="180" font-size="16" font-weight="bold" fill="#2196F3">&#10003;</text>
+  <text x="120" y="180" font-size="13" fill="#0d2b45">Указано, где и как использован ИИ (генерация, анализ, визуализация)</text>
+
+  <!-- Пункт 4 -->
+  <rect x="60" y="205" width="640" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="90" y="230" font-size="16" font-weight="bold" fill="#2196F3">&#10003;</text>
+  <text x="120" y="230" font-size="13" fill="#0d2b45">Результат ИИ проверен вручную: факты, числа, код запускается</text>
+
+  <!-- Пункт 5 (итоговый, зелёный) -->
+  <rect x="60" y="255" width="640" height="40" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="90" y="280" font-size="16" font-weight="bold" fill="#4CAF50">&#10003;</text>
+  <text x="120" y="280" font-size="13" font-weight="bold" fill="#1b5e20">Есть вывод и оформление — проект готов в портфолио</text>
+</svg>

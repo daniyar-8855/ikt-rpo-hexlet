@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="330" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Классификация сетевых угроз</text>
+
+  <!-- Корневой блок -->
+  <rect x="280" y="50" width="200" height="40" rx="8" fill="#2196F3"/>
+  <text x="380" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">Вредоносное ПО и атаки</text>
+
+  <!-- Линии к ветвям -->
+  <line x1="380" y1="90" x2="100" y2="135" stroke="#90caf9" stroke-width="1.5"/>
+  <line x1="380" y1="90" x2="290" y2="135" stroke="#90caf9" stroke-width="1.5"/>
+  <line x1="380" y1="90" x2="470" y2="135" stroke="#90caf9" stroke-width="1.5"/>
+  <line x1="380" y1="90" x2="660" y2="135" stroke="#90caf9" stroke-width="1.5"/>
+
+  <!-- Вирус -->
+  <rect x="20" y="135" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="100" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Вирус</text>
+  <text x="100" y="180" text-anchor="middle" font-size="11" fill="#0d2b45">внедряется в файлы</text>
+
+  <!-- Троян -->
+  <rect x="210" y="135" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="290" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Троян</text>
+  <text x="290" y="180" text-anchor="middle" font-size="11" fill="#0d2b45">маскируется под полезное</text>
+
+  <!-- Фишинг -->
+  <rect x="390" y="135" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="470" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Фишинг</text>
+  <text x="470" y="180" text-anchor="middle" font-size="11" fill="#0d2b45">выманивает данные</text>
+
+  <!-- Спам -->
+  <rect x="580" y="135" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="660" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Спам</text>
+  <text x="660" y="180" text-anchor="middle" font-size="11" fill="#0d2b45">массовая рассылка</text>
+
+  <!-- Второй ряд: подвиды ВПО -->
+  <line x1="100" y1="195" x2="100" y2="235" stroke="#90caf9" stroke-width="1.5"/>
+  <line x1="290" y1="195" x2="290" y2="235" stroke="#90caf9" stroke-width="1.5"/>
+
+  <rect x="20" y="235" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="100" y="260" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Шифровальщик</text>
+  <text x="100" y="280" text-anchor="middle" font-size="11" fill="#0d2b45">шифрует, требует выкуп</text>
+
+  <rect x="210" y="235" width="160" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="290" y="260" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Шпионское ПО</text>
+  <text x="290" y="280" text-anchor="middle" font-size="11" fill="#0d2b45">тайно собирает данные</text>
+
+  <!-- Подпись -->
+  <text x="565" y="262" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Общий термин для вредоносного:</text>
+  <rect x="470" y="270" width="190" height="34" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="565" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">ВПО (malware)</text>
+</svg>

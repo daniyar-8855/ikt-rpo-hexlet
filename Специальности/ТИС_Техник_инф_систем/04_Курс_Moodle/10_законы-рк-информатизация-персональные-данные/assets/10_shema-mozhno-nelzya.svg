@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Персональные данные: что можно и что нельзя</text>
+
+  <!-- МОЖНО -->
+  <rect x="30" y="55" width="330" height="240" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">МОЖНО</text>
+
+  <rect x="55" y="100" width="280" height="38" rx="6" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="124" text-anchor="middle" font-size="12" fill="#1b5e20">собирать с согласия и для цели</text>
+
+  <rect x="55" y="148" width="280" height="38" rx="6" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="172" text-anchor="middle" font-size="12" fill="#1b5e20">собирать только необходимое</text>
+
+  <rect x="55" y="196" width="280" height="38" rx="6" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="220" text-anchor="middle" font-size="12" fill="#1b5e20">хранить защищённо (шифрование)</text>
+
+  <rect x="55" y="244" width="280" height="38" rx="6" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="268" text-anchor="middle" font-size="12" fill="#1b5e20">использовать тестовые данные</text>
+
+  <!-- НЕЛЬЗЯ -->
+  <rect x="400" y="55" width="330" height="240" rx="10" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#b71c1c">НЕЛЬЗЯ</text>
+
+  <rect x="425" y="100" width="280" height="38" rx="6" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="124" text-anchor="middle" font-size="12" fill="#b71c1c">собирать без согласия</text>
+
+  <rect x="425" y="148" width="280" height="38" rx="6" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="172" text-anchor="middle" font-size="12" fill="#b71c1c">копить данные «на всякий случай»</text>
+
+  <rect x="425" y="196" width="280" height="38" rx="6" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="220" text-anchor="middle" font-size="12" fill="#b71c1c">передавать третьим лицам без основания</text>
+
+  <rect x="425" y="244" width="280" height="38" rx="6" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="268" text-anchor="middle" font-size="12" fill="#b71c1c">сливать реальные данные в ИИ-сервис</text>
+</svg>

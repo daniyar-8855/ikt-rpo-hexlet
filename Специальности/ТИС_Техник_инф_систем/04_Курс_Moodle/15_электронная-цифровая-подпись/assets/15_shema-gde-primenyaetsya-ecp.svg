@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Где применяется ЭЦП</text>
+
+  <!-- Центр -->
+  <rect x="290" y="120" width="180" height="56" rx="8" fill="#2196F3"/>
+  <text x="380" y="145" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">ЭЦП</text>
+  <text x="380" y="163" text-anchor="middle" font-size="10" fill="#e3f2fd">сила = подпись от руки</text>
+
+  <!-- Госуслуги -->
+  <rect x="40" y="60" width="200" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="140" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Госуслуги</text>
+  <text x="140" y="99" text-anchor="middle" font-size="11" fill="#37474f">eGov: заявления, ИП</text>
+
+  <!-- Договоры -->
+  <rect x="520" y="60" width="200" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="620" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Договоры</text>
+  <text x="620" y="99" text-anchor="middle" font-size="11" fill="#37474f">электронные сделки</text>
+
+  <!-- Отчётность -->
+  <rect x="280" y="225" width="200" height="50" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="247" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Отчётность</text>
+  <text x="380" y="264" text-anchor="middle" font-size="11" fill="#2e7d32">налоги, сдача форм</text>
+
+  <!-- Линии -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none">
+    <path d="M240 95 L290 130" marker-end="url(#arr2)"/>
+    <path d="M520 95 L470 130" marker-end="url(#arr2)"/>
+    <path d="M380 176 L380 225" marker-end="url(#arrg2)"/>
+  </g>
+
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+
+  <text x="380" y="293" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Одна технология — много задач: где нужна юридически значимая подпись</text>
+</svg>
