@@ -1,39 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="360" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#ffffff"/>
 
-  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Структура хорошего промпта</text>
+  <text x="380" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Структура промпта по модели 5S</text>
 
-  <!-- Роль -->
-  <rect x="180" y="55" width="400" height="44" rx="8" fill="#2196F3"/>
-  <text x="380" y="76" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">1. РОЛЬ</text>
-  <text x="380" y="92" text-anchor="middle" font-size="11" fill="#ffffff">«Ты опытный Python-разработчик»</text>
+  <!-- 1. Set the Scene -->
+  <rect x="110" y="48" width="540" height="46" rx="8" fill="#2196F3"/>
+  <text x="380" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. SET THE SCENE — задай роль / сцену</text>
+  <text x="380" y="86" text-anchor="middle" font-size="11" fill="#ffffff">«Ты опытный Python-разработчик»</text>
 
-  <!-- Задача -->
-  <rect x="180" y="115" width="400" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
-  <text x="380" y="136" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">2. ЗАДАЧА</text>
-  <text x="380" y="152" text-anchor="middle" font-size="11" fill="#0d2b45">«напиши функцию проверки e-mail»</text>
+  <!-- 2. Be Specific -->
+  <rect x="110" y="106" width="540" height="46" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="128" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">2. BE SPECIFIC — будь конкретен (детали, ограничения, пример)</text>
+  <text x="380" y="144" text-anchor="middle" font-size="11" fill="#0d2b45">«функция проверки e-mail: вход — строка, выход — True/False»</text>
 
-  <!-- Контекст -->
-  <rect x="180" y="175" width="400" height="44" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
-  <text x="380" y="196" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">3. КОНТЕКСТ</text>
-  <text x="380" y="212" text-anchor="middle" font-size="11" fill="#0d2b45">вход/выход, ограничения, пример</text>
+  <!-- 3. Simplify -->
+  <rect x="110" y="164" width="540" height="46" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="186" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">3. SIMPLIFY — пиши простым, прямым языком</text>
+  <text x="380" y="202" text-anchor="middle" font-size="11" fill="#0d2b45">короткие команды, без лишних вводных слов</text>
 
-  <!-- Формат ответа -->
-  <rect x="180" y="235" width="400" height="44" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
-  <text x="380" y="256" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">4. ФОРМАТ ОТВЕТА</text>
-  <text x="380" y="272" text-anchor="middle" font-size="11" fill="#1b5e20">«код + краткое пояснение»</text>
+  <!-- 4. Structure the Output -->
+  <rect x="110" y="222" width="540" height="46" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">4. STRUCTURE — задай формат ответа</text>
+  <text x="380" y="260" text-anchor="middle" font-size="11" fill="#0d2b45">«код + краткое пояснение» или таблица / список</text>
+
+  <!-- 5. Share Feedback -->
+  <rect x="110" y="280" width="540" height="46" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="302" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">5. SHARE FEEDBACK — уточняй в диалоге</text>
+  <text x="380" y="318" text-anchor="middle" font-size="11" fill="#1b5e20">«слишком длинно — сократи; добавь проверку пустой строки»</text>
 
   <!-- Стрелки -->
   <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
-    <path d="M380 99 L380 113"/>
-    <path d="M380 159 L380 173"/>
-    <path d="M380 219 L380 233"/>
+    <path d="M380 94 L380 104"/>
+    <path d="M380 152 L380 162"/>
+    <path d="M380 210 L380 220"/>
+    <path d="M380 268 L380 278"/>
   </g>
 
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
   </defs>
 
-  <text x="380" y="320" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Роль + Задача + Контекст + Формат = точный ответ ИИ</text>
-  <text x="380" y="342" text-anchor="middle" font-size="11" fill="#37474f">Чем конкретнее каждая часть, тем меньше итераций нужно</text>
+  <text x="380" y="358" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">5S = Scene + Specific + Simplify + Structure + Share → точный ответ ИИ</text>
+  <text x="380" y="380" text-anchor="middle" font-size="11" fill="#37474f">Чем конкретнее каждый шаг, тем меньше итераций нужно</text>
 </svg>
