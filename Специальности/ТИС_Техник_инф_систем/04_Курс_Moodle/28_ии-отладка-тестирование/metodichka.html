@@ -177,7 +177,7 @@ IndexError: list index out of range</code></pre>
 
 <p><strong><code>KeyError</code> — нет такого ключа в словаре.</strong> Обращаемся к ключу, которого в словаре нет:</p>
 
-<pre><code>student = {"imya": "Айгуль", "gruppa": "РПО-23"}
+<pre><code>student = {"imya": "Айгуль", "gruppa": "ТИС-23"}
 print(student["vozrast"])      # ключа "vozrast" в словаре нет</code></pre>
 
 <pre><code>Traceback (most recent call last):
@@ -338,7 +338,7 @@ except ValueError:
 
 <p>Логика такая: если <code>srednee([])</code> кинул <code>ValueError</code> — мы перехватили его в <code>except</code> и напечатали «OK». Если функция <em>не</em> упала (значит, баг с пустым списком вернулся) — выполнится строка <code>print("ОШИБКА ТЕСТА...")</code>. Тест проверяет не результат, а <em>правильное падение</em>.</p>
 
-<p>На практике техники информационных систем не пишут такие проверки руками, а используют инструмент <strong><code>pytest</code></strong> — он сам находит тесты, запускает их и красиво показывает результат [11]. Тест на pytest — это обычная функция с именем, начинающимся на <code>test_</code>. Кладём функцию в <code>main.py</code>, а тесты — в отдельный файл <code>test_main.py</code>:</p>
+<p>На практике техники ИС не пишут такие проверки руками, а используют инструмент <strong><code>pytest</code></strong> — он сам находит тесты, запускает их и красиво показывает результат [11]. Тест на pytest — это обычная функция с именем, начинающимся на <code>test_</code>. Кладём функцию в <code>main.py</code>, а тесты — в отдельный файл <code>test_main.py</code>:</p>
 
 <pre><code>import pytest
 from main import srednee          # импортируем нашу функцию из main.py
