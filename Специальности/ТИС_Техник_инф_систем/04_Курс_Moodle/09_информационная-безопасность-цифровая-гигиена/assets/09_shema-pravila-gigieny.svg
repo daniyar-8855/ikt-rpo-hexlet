@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Четыре правила цифровой гигиены</text>
+
+  <!-- Пароли -->
+  <rect x="30" y="60" width="160" height="120" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="50" y="76" width="120" height="32" rx="6" fill="#2196F3"/>
+  <text x="110" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Пароли</text>
+  <text x="110" y="132" text-anchor="middle" font-size="11" fill="#0d2b45">длинные,</text>
+  <text x="110" y="150" text-anchor="middle" font-size="11" fill="#0d2b45">уникальные,</text>
+  <text x="110" y="168" text-anchor="middle" font-size="11" fill="#0d2b45">в менеджере</text>
+
+  <!-- 2FA -->
+  <rect x="220" y="60" width="160" height="120" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="240" y="76" width="120" height="32" rx="6" fill="#2196F3"/>
+  <text x="300" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">2FA</text>
+  <text x="300" y="132" text-anchor="middle" font-size="11" fill="#0d2b45">второй фактор</text>
+  <text x="300" y="150" text-anchor="middle" font-size="11" fill="#0d2b45">входа помимо</text>
+  <text x="300" y="168" text-anchor="middle" font-size="11" fill="#0d2b45">пароля</text>
+
+  <!-- Обновления -->
+  <rect x="410" y="60" width="160" height="120" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="430" y="76" width="120" height="32" rx="6" fill="#2196F3"/>
+  <text x="490" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Обновления</text>
+  <text x="490" y="132" text-anchor="middle" font-size="11" fill="#0d2b45">закрывают</text>
+  <text x="490" y="150" text-anchor="middle" font-size="11" fill="#0d2b45">известные</text>
+  <text x="490" y="168" text-anchor="middle" font-size="11" fill="#0d2b45">уязвимости</text>
+
+  <!-- Резервные копии -->
+  <rect x="600" y="60" width="160" height="120" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <rect x="620" y="76" width="120" height="32" rx="6" fill="#4CAF50"/>
+  <text x="680" y="97" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">Резервные копии</text>
+  <text x="680" y="132" text-anchor="middle" font-size="11" fill="#1b5e20">правило 3-2-1</text>
+  <text x="680" y="150" text-anchor="middle" font-size="11" fill="#1b5e20">и проверка</text>
+  <text x="680" y="168" text-anchor="middle" font-size="11" fill="#1b5e20">восстановления</text>
+
+  <text x="380" y="232" text-anchor="middle" font-size="13" fill="#0d2b45">Это ежедневные привычки, а не разовая настройка</text>
+  <text x="380" y="262" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Каждое правило закрывает свою группу угроз — работают вместе</text>
+</svg>

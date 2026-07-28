@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="250" fill="#ffffff"/>
+
+  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Обращение к открытым данным через API</text>
+
+  <!-- Программа -->
+  <rect x="40" y="90" width="220" height="80" rx="8" fill="#2196F3"/>
+  <text x="150" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">Твоя программа</text>
+  <text x="150" y="148" text-anchor="middle" font-size="12" fill="#ffffff">(приложение, скрипт)</text>
+
+  <!-- Сервис / API -->
+  <rect x="500" y="90" width="220" height="80" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="610" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">Сервис (API)</text>
+  <text x="610" y="148" text-anchor="middle" font-size="12" fill="#37474f">портал, банк, погода</text>
+
+  <!-- Запрос -->
+  <path d="M260 115 L500 115" stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <text x="380" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Запрос</text>
+
+  <!-- Ответ -->
+  <path d="M500 150 L260 150" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#arrg)"/>
+  <text x="380" y="170" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Ответ: JSON</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+
+  <text x="380" y="215" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Без ручного скачивания: программа сама получает актуальные данные</text>
+</svg>

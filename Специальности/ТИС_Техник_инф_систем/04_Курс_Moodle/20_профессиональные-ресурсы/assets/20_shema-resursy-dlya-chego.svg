@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Какой ресурс для чего</text>
+
+  <!-- MDN / документация -->
+  <rect x="25" y="60" width="220" height="200" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="55" y="78" width="160" height="34" rx="6" fill="#2196F3"/>
+  <text x="135" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">MDN / документация</text>
+  <text x="135" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">как что-то работает</text>
+  <text x="135" y="165" text-anchor="middle" font-size="12" fill="#0d2b45">официально и точно</text>
+  <text x="135" y="195" text-anchor="middle" font-size="12" fill="#0d2b45">параметры, примеры</text>
+  <text x="135" y="235" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">первоисточник, основа</text>
+
+  <!-- Stack Overflow -->
+  <rect x="270" y="60" width="220" height="200" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="300" y="78" width="160" height="34" rx="6" fill="#2196F3"/>
+  <text x="380" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Stack Overflow</text>
+  <text x="380" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">вопросы и ответы</text>
+  <text x="380" y="165" text-anchor="middle" font-size="12" fill="#0d2b45">как решали проблему</text>
+  <text x="380" y="195" text-anchor="middle" font-size="12" fill="#0d2b45">голоса, обсуждение</text>
+  <text x="380" y="235" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">застрял с ошибкой</text>
+
+  <!-- GitHub -->
+  <rect x="515" y="60" width="220" height="200" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <rect x="545" y="78" width="160" height="34" rx="6" fill="#4CAF50"/>
+  <text x="625" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">GitHub</text>
+  <text x="625" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">код и совместная</text>
+  <text x="625" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">разработка</text>
+  <text x="625" y="190" text-anchor="middle" font-size="12" fill="#1b5e20">версии, история</text>
+  <text x="625" y="235" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">хранение и портфолио</text>
+</svg>

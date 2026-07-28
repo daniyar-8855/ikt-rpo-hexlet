@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Как проходит онлайн-платёж</text>
+
+  <!-- Покупатель -->
+  <rect x="30" y="90" width="170" height="60" rx="8" fill="#2196F3"/>
+  <text x="115" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">Покупатель</text>
+  <text x="115" y="137" text-anchor="middle" font-size="11" fill="#ffffff">подтверждает оплату</text>
+
+  <!-- Банк / платёжная система -->
+  <rect x="295" y="80" width="170" height="80" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Банк / платёжная</text>
+  <text x="380" y="123" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">система</text>
+  <text x="380" y="144" text-anchor="middle" font-size="11" fill="#37474f">проверка средств и личности</text>
+
+  <!-- Продавец -->
+  <rect x="560" y="90" width="170" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="645" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">Продавец</text>
+  <text x="645" y="137" text-anchor="middle" font-size="11" fill="#1b5e20">получает деньги</text>
+
+  <!-- Стрелки вперёд -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M200 110 L290 110"/>
+    <path d="M465 110 L555 110"/>
+  </g>
+
+  <!-- Чек назад -->
+  <path d="M645 150 Q645 210 380 210 Q115 210 115 152" stroke="#4CAF50" stroke-width="2.5" fill="none" stroke-dasharray="5,4" marker-end="url(#arrg)"/>
+  <text x="380" y="200" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">подтверждение (чек) возвращается покупателю</text>
+
+  <!-- Защита данных -->
+  <rect x="245" y="240" width="270" height="42" rx="8" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <text x="380" y="266" text-anchor="middle" font-size="12" font-weight="bold" fill="#7a5b00">Защита данных: шифрование (https) и 3DS</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+  </defs>
+</svg>

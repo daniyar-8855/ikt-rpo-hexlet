@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Виды разрешительных документов</text>
+
+  <!-- Лицензия -->
+  <rect x="30" y="60" width="220" height="210" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <rect x="55" y="80" width="170" height="36" rx="6" fill="#2196F3"/>
+  <text x="140" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">ЛИЦЕНЗИЯ</text>
+  <text x="140" y="145" text-anchor="middle" font-size="12" fill="#0d2b45">высокий риск,</text>
+  <text x="140" y="165" text-anchor="middle" font-size="12" fill="#0d2b45">строгий контроль</text>
+  <text x="140" y="200" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">медицина, финансы,</text>
+  <text x="140" y="218" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">образование, гостайна</text>
+
+  <!-- Разрешение / уведомление -->
+  <rect x="270" y="60" width="220" height="210" rx="10" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <rect x="290" y="80" width="180" height="36" rx="6" fill="#FFC107"/>
+  <text x="380" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#5d4037">РАЗРЕШЕНИЕ /</text>
+  <text x="380" y="135" text-anchor="middle" font-size="13" font-weight="bold" fill="#5d4037">УВЕДОМЛЕНИЕ</text>
+  <text x="380" y="172" text-anchor="middle" font-size="12" fill="#5d4037">средний/низкий риск,</text>
+  <text x="380" y="192" text-anchor="middle" font-size="12" fill="#5d4037">упрощённая форма</text>
+  <text x="380" y="226" text-anchor="middle" font-size="11" fill="#6d4c41" font-style="italic">часть видов услуг</text>
+
+  <!-- Свободная деятельность -->
+  <rect x="510" y="60" width="220" height="210" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <rect x="535" y="80" width="170" height="36" rx="6" fill="#4CAF50"/>
+  <text x="620" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">СВОБОДНАЯ</text>
+  <text x="620" y="145" text-anchor="middle" font-size="12" fill="#1b5e20">без лицензии</text>
+  <text x="620" y="165" text-anchor="middle" font-size="12" fill="#1b5e20">и разрешения</text>
+  <text x="620" y="200" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">сайты, приложения,</text>
+  <text x="620" y="218" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">вёрстка, большинство ИТ</text>
+
+  <text x="380" y="300" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Чем выше риск для людей — тем строже разрешительный документ</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="280" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Правила безопасных платежей</text>
+
+  <!-- Можно -->
+  <rect x="30" y="55" width="330" height="200" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">МОЖНО / НУЖНО</text>
+  <text x="195" y="115" text-anchor="middle" font-size="12" fill="#1b5e20">проверять адрес сайта (https, домен)</text>
+  <text x="195" y="145" text-anchor="middle" font-size="12" fill="#1b5e20">подтверждать оплату через 3DS</text>
+  <text x="195" y="175" text-anchor="middle" font-size="12" fill="#1b5e20">включать уведомления и лимиты</text>
+  <text x="195" y="205" text-anchor="middle" font-size="12" fill="#1b5e20">платить в официальном приложении</text>
+  <text x="195" y="235" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">(Kaspi, Halyk, eGov)</text>
+
+  <!-- Нельзя -->
+  <rect x="400" y="55" width="330" height="200" rx="10" fill="#fdecea" stroke="#f44336" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#b71c1c">НЕЛЬЗЯ</text>
+  <text x="565" y="115" text-anchor="middle" font-size="12" fill="#7a1a14">сообщать CVV кому-либо</text>
+  <text x="565" y="145" text-anchor="middle" font-size="12" fill="#7a1a14">диктовать коды из SMS</text>
+  <text x="565" y="175" text-anchor="middle" font-size="12" fill="#7a1a14">вводить данные карты по ссылке</text>
+  <text x="565" y="205" text-anchor="middle" font-size="12" fill="#7a1a14">сканировать чужой подозрительный QR</text>
+  <text x="565" y="235" text-anchor="middle" font-size="11" fill="#b71c1c" font-style="italic">для получения денег это не нужно</text>
+</svg>

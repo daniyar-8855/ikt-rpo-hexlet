@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Что входит в IT-резюме</text>
+
+  <!-- Центральный блок -->
+  <rect x="290" y="125" width="180" height="50" rx="8" fill="#2196F3"/>
+  <text x="380" y="156" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">IT-резюме</text>
+
+  <!-- Контакты -->
+  <rect x="40" y="60" width="190" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="135" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Контакты</text>
+  <text x="135" y="100" text-anchor="middle" font-size="11" fill="#37474f">email, телефон, GitHub</text>
+
+  <!-- Навыки -->
+  <rect x="530" y="60" width="190" height="50" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="625" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Навыки / стек</text>
+  <text x="625" y="100" text-anchor="middle" font-size="11" fill="#37474f">языки, фреймворки</text>
+
+  <!-- Проекты -->
+  <rect x="40" y="190" width="190" height="56" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="135" y="213" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Проекты</text>
+  <text x="135" y="231" text-anchor="middle" font-size="11" fill="#2e7d32">GitHub + README</text>
+
+  <!-- Опыт -->
+  <rect x="530" y="190" width="190" height="56" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="625" y="213" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">Опыт</text>
+  <text x="625" y="231" text-anchor="middle" font-size="11" fill="#37474f">практика, стажировки</text>
+
+  <!-- Линии -->
+  <g stroke="#90caf9" stroke-width="2" fill="none">
+    <path d="M290 142 L230 90"/>
+    <path d="M470 142 L530 90"/>
+    <path d="M290 160 L230 205"/>
+    <path d="M470 160 L530 205"/>
+  </g>
+
+  <text x="380" y="285" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">Главное для разработчика — проекты на GitHub: код виден лучше любых слов</text>
+</svg>

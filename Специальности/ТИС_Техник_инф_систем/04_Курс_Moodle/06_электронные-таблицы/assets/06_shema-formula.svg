@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Как устроена формула: =СУММ(A1:A10)</text>
+
+  <!-- Знак равно -->
+  <rect x="60" y="70" width="130" height="60" rx="8" fill="#2196F3"/>
+  <text x="125" y="100" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">=</text>
+  <text x="125" y="120" text-anchor="middle" font-size="11" fill="#ffffff">знак равно</text>
+
+  <!-- Имя функции -->
+  <rect x="210" y="70" width="180" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="300" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#0d2b45">СУММ</text>
+  <text x="300" y="120" text-anchor="middle" font-size="11" fill="#37474f">имя функции</text>
+
+  <!-- Скобки + диапазон -->
+  <rect x="410" y="70" width="290" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="555" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b5e20">( A1 : A10 )</text>
+  <text x="555" y="120" text-anchor="middle" font-size="11" fill="#2e7d32">аргумент — диапазон ячеек</text>
+
+  <!-- Подписи-стрелки вниз -->
+  <line x1="125" y1="130" x2="125" y2="160" stroke="#90caf9" stroke-width="2"/>
+  <text x="125" y="178" text-anchor="middle" font-size="11" fill="#37474f">это формула,</text>
+  <text x="125" y="192" text-anchor="middle" font-size="11" fill="#37474f">а не текст</text>
+
+  <line x1="300" y1="130" x2="300" y2="160" stroke="#90caf9" stroke-width="2"/>
+  <text x="300" y="178" text-anchor="middle" font-size="11" fill="#37474f">что сделать</text>
+  <text x="300" y="192" text-anchor="middle" font-size="11" fill="#37474f">(сложить)</text>
+
+  <line x1="555" y1="130" x2="555" y2="160" stroke="#90caf9" stroke-width="2"/>
+  <text x="555" y="178" text-anchor="middle" font-size="11" fill="#37474f">над чем (A1, A2, …, A10):</text>
+  <text x="555" y="192" text-anchor="middle" font-size="11" fill="#37474f">двоеточие = «с … по»</text>
+
+  <!-- Итоговый блок -->
+  <rect x="180" y="225" width="400" height="50" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="248" text-anchor="middle" font-size="13" fill="#1b5e20">Результат: сумма чисел из ячеек A1…A10</text>
+  <text x="380" y="266" text-anchor="middle" font-size="12" fill="#2e7d32" font-style="italic">формула всегда начинается со знака =</text>
+</svg>

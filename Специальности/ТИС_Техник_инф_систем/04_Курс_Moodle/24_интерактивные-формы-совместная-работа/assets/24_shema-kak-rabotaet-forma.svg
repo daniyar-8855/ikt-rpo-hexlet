@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="260" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Как работает онлайн-форма</text>
+
+  <!-- Создатель -->
+  <rect x="30" y="90" width="170" height="60" rx="8" fill="#2196F3"/>
+  <text x="115" y="116" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">Создатель</text>
+  <text x="115" y="136" text-anchor="middle" font-size="11" fill="#ffffff">собирает вопросы</text>
+
+  <!-- Форма -->
+  <rect x="295" y="90" width="170" height="60" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="116" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d2b45">Форма</text>
+  <text x="380" y="136" text-anchor="middle" font-size="11" fill="#37474f">ссылку открывают люди</text>
+
+  <!-- Таблица ответов -->
+  <rect x="560" y="90" width="170" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="645" y="116" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">Таблица ответов</text>
+  <text x="645" y="136" text-anchor="middle" font-size="11" fill="#2e7d32">собирается автоматически</text>
+
+  <!-- Люди -->
+  <text x="380" y="185" text-anchor="middle" font-size="12" fill="#0d2b45" font-style="italic">респонденты заполняют поля</text>
+
+  <!-- Стрелки -->
+  <g stroke="#90caf9" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <path d="M200 120 L295 120"/>
+    <path d="M465 120 L560 120"/>
+  </g>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2196F3"/></marker>
+  </defs>
+
+  <text x="380" y="235" text-anchor="middle" font-size="12" fill="#37474f" font-style="italic">создал → раздал ссылку → ответы сами легли в таблицу в едином формате</text>
+</svg>

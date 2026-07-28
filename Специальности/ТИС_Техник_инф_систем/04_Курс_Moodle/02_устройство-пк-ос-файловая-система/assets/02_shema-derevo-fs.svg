@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="380" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Дерево файловой системы и путь к файлу</text>
+
+  <!-- Корень -->
+  <rect x="300" y="50" width="160" height="40" rx="8" fill="#2196F3"/>
+  <text x="380" y="75" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">app/  (корень)</text>
+
+  <!-- Уровень папок -->
+  <rect x="60" y="140" width="150" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="135" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">src/</text>
+
+  <rect x="305" y="140" width="150" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="380" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">data/</text>
+
+  <rect x="550" y="140" width="150" height="40" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="625" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d2b45">tests/</text>
+
+  <!-- Уровень файлов -->
+  <rect x="60" y="230" width="150" height="38" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="135" y="254" text-anchor="middle" font-size="12" fill="#1b5e20">index.js</text>
+
+  <rect x="305" y="230" width="150" height="38" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="380" y="254" text-anchor="middle" font-size="12" fill="#1b5e20">users.csv</text>
+
+  <rect x="550" y="230" width="150" height="38" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="625" y="254" text-anchor="middle" font-size="12" fill="#1b5e20">test_app.js</text>
+
+  <!-- Линии связей -->
+  <g stroke="#90caf9" stroke-width="2" fill="none">
+    <path d="M380 90 L135 140"/>
+    <path d="M380 90 L380 140"/>
+    <path d="M380 90 L625 140"/>
+    <path d="M135 180 L135 230"/>
+    <path d="M380 180 L380 230"/>
+    <path d="M625 180 L625 230"/>
+  </g>
+
+  <!-- Блок пути -->
+  <rect x="180" y="310" width="400" height="44" rx="8" fill="#fff8e1" stroke="#FFC107" stroke-width="1.5"/>
+  <text x="380" y="330" text-anchor="middle" font-size="12" font-weight="bold" fill="#7a5c00">Путь к файлу = маршрут по дереву:</text>
+  <text x="380" y="347" text-anchor="middle" font-size="12" fill="#7a5c00">app/data/users.csv</text>
+</svg>

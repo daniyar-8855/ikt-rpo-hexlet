@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3c5e">Локальное хранение и облако</text>
+
+  <!-- Локально -->
+  <rect x="30" y="55" width="330" height="210" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="195" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#0d2b45">ЛОКАЛЬНО (на диске)</text>
+
+  <rect x="60" y="100" width="270" height="36" rx="6" fill="#2196F3"/>
+  <text x="195" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Файл живёт на одном ПК</text>
+
+  <text x="195" y="165" text-anchor="middle" font-size="12" fill="#0d2b45">копии по почте, рассинхрон</text>
+  <text x="195" y="190" text-anchor="middle" font-size="12" fill="#0d2b45">доступ только за этим ПК</text>
+  <text x="195" y="215" text-anchor="middle" font-size="12" fill="#0d2b45">истории версий нет</text>
+  <text x="195" y="245" text-anchor="middle" font-size="11" fill="#37474f" font-style="italic">«финал_2_правка.docx»</text>
+
+  <!-- Облако -->
+  <rect x="400" y="55" width="330" height="210" rx="10" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="565" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">ОБЛАКО</text>
+
+  <rect x="430" y="100" width="270" height="36" rx="6" fill="#4CAF50"/>
+  <text x="565" y="123" text-anchor="middle" font-size="12" fill="#ffffff">Один файл на сервере</text>
+
+  <text x="565" y="165" text-anchor="middle" font-size="12" fill="#1b5e20">доступ с разных устройств</text>
+  <text x="565" y="190" text-anchor="middle" font-size="12" fill="#1b5e20">общий доступ по интернету</text>
+  <text x="565" y="215" text-anchor="middle" font-size="12" fill="#1b5e20">история версий и откат</text>
+  <text x="565" y="245" text-anchor="middle" font-size="11" fill="#2e7d32" font-style="italic">единый источник правды</text>
+</svg>
